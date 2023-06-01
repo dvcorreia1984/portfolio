@@ -1,37 +1,47 @@
-/*Header*/
+/* Header */
+.topbar {
+  position: fixed;
+  display: flex;
+  border: 1px red solid;
+  height: 48px;
+  width: 375px;
+}
+
 .bars {
   display: flex;
   width: 375px;
   height: 44px;
-  border: solid 1px red; 
+  border: solid 1px red;
 }
 
+
+
 .timebox {
-  margin:13px 300px 12px 21px;
+  margin: 13px 300px 12px 21px;
   display: flex;
   border: solid 2px red;
 }
 
-
 .box {
   font-family: sans-serif;
-  color:black;
+  color: black;
   text-align: center;
 }
 
 /* Colours for each box */
-.page1 { 
-  background:white;
+.page1 {
+  background: white;
   background-image: url("./Assets/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
   display: flex;
   height: 653.32px;
 }
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  display:flex;
-  border:1px solid black;
+  display: flex;
+  border: 1px solid black;
   width: 381px;
+  height: 6351px;
   flex-direction: column;
-  height: 100vh;
 }
