@@ -6,6 +6,11 @@
   border: solid 1px red; 
 }
 
+.timebox {
+  margin:13px 300px 12px 21px;
+  display: flex;
+  border: solid 2px red;
+}
 
 
 .box {
