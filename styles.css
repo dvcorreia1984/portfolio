@@ -1,3 +1,32 @@
-.portfolio {
-  color: red;
+/*Header*/
+.bars {
+  display: flex;
+  width: 375px;
+  height: 44px;
+  border: solid 1px red; 
+}
+
+
+
+.box {
+  font-family: sans-serif;
+  color:black;
+  text-align: center;
+}
+
+/* Colours for each box */
+.page1 { 
+  background:white;
+  background-image: url("./Assets/header-illsutration-mobile.svg");
+  display: flex;
+  height: 653.32px;
+}
+
+/* We start writing out flexbox here. The above is just page setup */
+.container {
+  display:flex;
+  border:1px solid black;
+  width: 381px;
+  flex-direction: column;
+  height: 100vh;
 }
