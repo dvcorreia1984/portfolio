@@ -46,21 +46,15 @@ body {
   text-align: center;
 }
 
-.page1bg {
-  position: relative;
-  background-size: cover;
-  margin-top: 48.8px;
-  background-image: url("./Assets/header-illsutration-mobile.svg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-color: antiquewhite;
-}
-
 /* We start writing out flexbox here. The above is just page setup */
 .container {
-  margin-top: 0;
   display: flex;
+  background-image: url("./Assets/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -94,11 +88,6 @@ h1 span {
   width: 327px;
   margin: 350px 27px 164px 27px;
   padding-left: 20px;
-}
-
-.pg1content > p:nth-child(1) {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .social {
