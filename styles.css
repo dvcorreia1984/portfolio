@@ -42,7 +42,6 @@ body {
   border: solid 1px red;
 }
 
-/* Colours for each box */
 /* .page1bg {
   margin-top: 48.8px;
   background-image: url("./Assets/header-illsutration-mobile.svg");
@@ -66,7 +65,7 @@ body {
   display: flex;
   height: 211px;
   width: 327px;
-  margin: 112px 27px;
+  margin: 112px 27px 0 27px;
   border: solid 1px red;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -84,10 +83,18 @@ h1 span {
 }
 
 .pg1content {
+  font-weight: 400;
+  display: flex;
   font-size: 20px;
   text-align: center;
   height: 164px;
   width: 327px;
   margin: 15px 27px;
   border: solid 1px red;
+  justify-content: space-around;
+}
+
+.pg1content > p:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
