@@ -43,14 +43,14 @@ body {
 }
 
 /* Colours for each box */
-.page1bg {
+/* .page1bg {
   margin-top: 48.8px;
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   height: 653.32px;
-}
+} */
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
@@ -81,4 +81,13 @@ h1 {
 
 h1 span {
   color: #36b37e;
+}
+
+.pg1content {
+  font-size: 20px;
+  text-align: center;
+  height: 164px;
+  width: 327px;
+  margin: 15px 27px;
+  border: solid 1px red;
 }
