@@ -98,3 +98,17 @@ h1 span {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.social {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px red;
+}
+
+ul {
+  width: 200px;
+  display: flex;
+  list-style: none;
+  color: red;
+  justify-content: space-between;
+}
