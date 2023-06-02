@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
-
 <div align="center">
-   <img src="eatsleepcode.jpg" alt="logo" width="300"  height="auto" />
   <br/>
 
-  <h3><b>Hello Microverse Project</b></h3>
+  <h1><b>Victor Correia</b></h1>
+  <h2><b>Portfolio Project</b></h2>
+
 
 </div>
 
@@ -30,17 +30,18 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Hello Microverse] <a name="about-project"></a>
+# 📖 [Portfolio Project] <a name="about-project"></a>
 
-> This is a HTML and CSS Project setup with Linters. 
+> This is a mobile first web design project. 
 
-**[Hello Microverse]** is the first project that new Microverse students have to do. In order to do complete this project linters have to be setup, to automatically check that code complies with HTML and CSS standards. 
+**[Portfolio Project]** is the second project Microverse students have to do. The goal is to duplicate the first page of the figma model by using a Mobile first strategy. At least two flexboxes have to be used. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 1- HTML
 2- CSS
 3- Linters
+
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -86,7 +87,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/dvcorreia1984/Hello-world.git
+  git clone https://github.com/dvcorreia1984/portfolio.git
 ```
 
 ### 💻Installation
@@ -122,9 +123,8 @@ Open index.html using live server extension
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add Header.
-- [ ] Add Footer.
-- [ ] Add Sidebar.
+- [ ] Add Desktop version
+- [ ] Add different color schemes. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +147,7 @@ If you like this project just give me a star ⭐.
 I would like to thank the follolowing: 
 
 - [Microverse](https://www.microverse.org/)
-- [Umar Mohammec](https://github.com/Omar-Muhamad) for the Videos he made
+- For my Microverse partner and teammates from other sessions. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
