@@ -1,10 +1,28 @@
+/* General settings */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Header */
 .topbar {
+  order: 1;
   position: fixed;
   display: flex;
+  flex-direction: row-reverse;
   border: 1px red solid;
   height: 48px;
   width: 375px;
+}
+
+.ham {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  float: right;
+  border: solid 1px blue;
+  color: black;
+  margin-top: 4px;
+  margin-right: 24px;
 }
 
 .bars {
@@ -14,18 +32,14 @@
   border: solid 1px red;
 }
 
-
-
-.timebox {
-  margin: 13px 300px 12px 21px;
-  display: flex;
-  border: solid 2px red;
-}
-
 .box {
+  margin-top: 0;
+  flex-direction: column;
+  order: 2;
   font-family: sans-serif;
   color: black;
   text-align: center;
+  border: solid 1px red;
 }
 
 /* Colours for each box */
@@ -34,11 +48,13 @@
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   height: 653.32px;
 }
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
+  margin-top: 0;
   display: flex;
   border: 1px solid black;
   width: 381px;
