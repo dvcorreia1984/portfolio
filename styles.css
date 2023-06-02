@@ -67,8 +67,9 @@ body {
 }
 
 h1 {
-  font-size: 2.7em ;
+  font-size: 3em ;
   color: #172b4d;
+  text-align: center;
 }
 
 h1 span {
@@ -78,7 +79,7 @@ h1 span {
 .pg1content {
   display: flex;
   flex-direction: column;
-  font-size: 1.49em;
+  font-size: 1.6em;
   text-align: center;
   padding: 1%;;
 }
@@ -107,4 +108,10 @@ ul {
   flex-direction: column;
   height: 100vh;
   z-index: 100;
+  border: 10px solid goldenrod;
+}
+
+.works {
+  background-color: aqua;;
+  padding:10% 10% 6% 10%;
 }
