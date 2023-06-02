@@ -87,6 +87,7 @@ h1 span {
   width: 327px;
   margin: 350px 27px 164px 27px;
   padding-left: 20px;
+  background-color: greenyellow;
 }
 
 .social {
@@ -109,4 +110,11 @@ ul {
   margin-top: -70px;
   display: flex;
   justify-content: space-around;
+}
+
+.contentbox {
+  border: 5px solid red; 
+  height: 100vh;
+  width: 50vh;
+  z-index: 100;
 }
