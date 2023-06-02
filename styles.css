@@ -1,4 +1,9 @@
 /* General settings */
+
+* {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -100,15 +105,18 @@ h1 span {
 }
 
 .social {
-  display: flex;
-  flex-direction: column;
-  border: solid 1px red;
+  position: absolute;
+  margin-top: -157.6px;
+  margin-left: 105px;
+  margin-bottom: 157.6px;
+  width: 170.17px;
+  height: 19.62px;
+  border: solid 1px rgb(0, 255, 38);
 }
 
 ul {
-  width: 200px;
   display: flex;
   list-style: none;
-  color: red;
   justify-content: space-between;
+  padding: 0;
 }
