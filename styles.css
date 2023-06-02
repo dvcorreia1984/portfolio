@@ -1,0 +1,116 @@
+/* General settings */
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #172b4d;
+}
+
+/* Header */
+.topbar {
+  order: 1;
+  position: fixed;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 48px;
+  width: 375px;
+}
+
+.ham {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  float: right;
+  color: black;
+  margin-top: 4px;
+  margin-right: 24px;
+}
+
+.bars {
+  display: flex;
+  width: 375px;
+  height: 44px;
+}
+
+.box {
+  margin-top: 48.8px;
+  flex-direction: column;
+  order: 2;
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.page1bg {
+  position: relative;
+  background-size: cover;
+  margin-top: 48.8px;
+  background-image: url("./Assets/header-illsutration-mobile.svg");
+  background-repeat: no-repeat;
+  height: 653.32px;
+}
+
+/* We start writing out flexbox here. The above is just page setup */
+.container {
+  margin-top: 0;
+  display: flex;
+  width: 381px;
+  height: 701.32px;
+  flex-direction: column;
+}
+
+.heading {
+  position: absolute;
+  display: flex;
+  height: 211px;
+  width: 327px;
+  margin: 112px 27px 0 27px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 5px;
+  color: #172b4d;
+}
+
+h1 span {
+  color: #36b37e;
+}
+
+.pg1content {
+  position: absolute;
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  height: 164px;
+  width: 327px;
+  margin: 350px 27px 164px 27px;
+  padding-left: 20px;
+}
+
+.pg1content > p:nth-child(1) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social {
+  position: absolute;
+  margin-left: 105px;
+  margin-bottom: 157.6px;
+  width: 170.17px;
+  height: 19.62px;
+  margin-top: 520px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
