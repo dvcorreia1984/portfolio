@@ -46,12 +46,11 @@ body {
   text-align: center;
 }
 
-/* We start writing out flexbox here. The above is just page setup */
 .container {
   display: flex;
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   height: 100vh;
   width: 100%;
@@ -61,17 +60,17 @@ body {
 .heading {
   position: absolute;
   display: flex;
-  height: 211px;
+  height: 30%;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   background-color: darkslateblue;
-  margin-top: 30%;
+  margin-top: 20%;
 }
 
 h1 {
-  font-size: 2.5em ;
+  font-size: 2.7em ;
   color: #172b4d;
 }
 
