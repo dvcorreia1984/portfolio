@@ -80,13 +80,14 @@ h1 span {
 .pg1content {
   display: flex;
   flex-direction: column;
-  font-size: 1.5em;
+  font-size: 1.49em;
   text-align: center;
   background-color: greenyellow;
+  padding: 1%;;
 }
 
 .social {
-  padding: 6%;
+  padding: 3%;
   display: flex;
   flex-direction: column;
   background-color: coral;
@@ -95,14 +96,15 @@ h1 span {
 ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
-  padding: 0;
+  justify-content: space-evenly;
+	padding: 5% 22% 5% 22%;
 }
 
 .action {
-  margin-top: -70px;
   display: flex;
   justify-content: space-around;
+  background-color: crimson;
+  padding-top: 19%;
 }
 
 .contentbox {
@@ -110,6 +112,5 @@ ul {
   flex-direction: column;
   border: 5px solid red; 
   height: 100vh;
-  width: 50vh;
   z-index: 100;
 }
