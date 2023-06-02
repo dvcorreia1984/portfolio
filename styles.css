@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #172b4d;
 }
 
 /* Header */
@@ -14,7 +15,6 @@ body {
   position: fixed;
   display: flex;
   flex-direction: row-reverse;
-  border: 1px red solid;
   height: 48px;
   width: 375px;
 }
@@ -24,7 +24,6 @@ body {
   width: 40px;
   display: flex;
   float: right;
-  border: solid 1px blue;
   color: black;
   margin-top: 4px;
   margin-right: 24px;
@@ -34,7 +33,6 @@ body {
   display: flex;
   width: 375px;
   height: 44px;
-  border: solid 1px red;
 }
 
 .box {
@@ -44,10 +42,9 @@ body {
   font-family: sans-serif;
   color: black;
   text-align: center;
-  border: solid 1px red;
 }
 
-* .page1bg {
+.page1bg {
   position: relative;
   background-size: cover;
   margin-top: 48.8px;
@@ -60,7 +57,6 @@ body {
 .container {
   margin-top: 0;
   display: flex;
-  border: 1px solid black;
   width: 381px;
   height: 701.32px;
   flex-direction: column;
@@ -72,7 +68,6 @@ body {
   height: 211px;
   width: 327px;
   margin: 112px 27px 0 27px;
-  border: solid 1px red;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
@@ -95,7 +90,6 @@ h1 span {
   text-align: center;
   height: 164px;
   width: 327px;
-  border: solid 1px red;
   margin: 350px 27px 164px 27px;
   padding-left: 20px;
 }
