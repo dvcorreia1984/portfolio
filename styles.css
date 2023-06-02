@@ -42,14 +42,14 @@ body {
   border: solid 1px red;
 }
 
-/* .page1bg {
+* .page1bg {
+  position: relative;
+  background-size: cover;
   margin-top: 48.8px;
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
   height: 653.32px;
-} */
+}
 
 /* We start writing out flexbox here. The above is just page setup */
 .container {
@@ -57,11 +57,12 @@ body {
   display: flex;
   border: 1px solid black;
   width: 381px;
-  height: 6351px;
+  height: 701.32px;
   flex-direction: column;
 }
 
 .heading {
+  position: absolute;
   display: flex;
   height: 211px;
   width: 327px;
@@ -83,15 +84,14 @@ h1 span {
 }
 
 .pg1content {
-  font-weight: 400;
+  position: absolute;
   display: flex;
   font-size: 20px;
   text-align: center;
   height: 164px;
   width: 327px;
-  margin: 15px 27px;
   border: solid 1px red;
-  justify-content: space-around;
+  margin: 382px 27px 164px 27px;
 }
 
 .pg1content > p:nth-child(1) {
