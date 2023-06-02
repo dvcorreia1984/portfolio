@@ -96,7 +96,8 @@ h1 span {
   height: 164px;
   width: 327px;
   border: solid 1px red;
-  margin: 382px 27px 164px 27px;
+  margin: 350px 27px 164px 27px;
+  padding-left: 20px;
 }
 
 .pg1content > p:nth-child(1) {
@@ -106,12 +107,11 @@ h1 span {
 
 .social {
   position: absolute;
-  margin-top: -157.6px;
   margin-left: 105px;
   margin-bottom: 157.6px;
   width: 170.17px;
   height: 19.62px;
-  border: solid 1px rgb(0, 255, 38);
+  margin-top: 520px;
 }
 
 ul {
