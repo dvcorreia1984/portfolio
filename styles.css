@@ -68,15 +68,16 @@ body {
   position: absolute;
   display: flex;
   height: 211px;
-  width: 327px;
-  margin: 112px 27px 0 27px;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  background-color: darkslateblue;
+  margin-top: 30%;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: xx-large;
   margin: 5px;
   color: #172b4d;
 }
