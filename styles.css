@@ -14,9 +14,9 @@ body {
   order: 1;
   position: fixed;
   display: flex;
-  flex-direction: row-reverse;
-  height: 48px;
-  width: 375px;
+  flex-direction: column-reverse;
+  height: 100%
+  width: 100%;
 }
 
 .ham {
@@ -57,7 +57,7 @@ body {
 .container {
   margin-top: 0;
   display: flex;
-  width: 381px;
+  width: 381px10;
   height: 701.32px;
   flex-direction: column;
 }
@@ -113,4 +113,10 @@ ul {
   list-style: none;
   justify-content: space-between;
   padding: 0;
+}
+
+.action {
+  margin-top: -70px;
+  display: flex;
+  justify-content: space-around;
 }
