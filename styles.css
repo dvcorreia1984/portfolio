@@ -64,7 +64,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  background-color: darkslateblue;
   margin-top: 20%;
 }
 
@@ -82,7 +81,6 @@ h1 span {
   flex-direction: column;
   font-size: 1.49em;
   text-align: center;
-  background-color: greenyellow;
   padding: 1%;;
 }
 
@@ -90,7 +88,6 @@ h1 span {
   padding: 3%;
   display: flex;
   flex-direction: column;
-  background-color: coral;
 }
 
 ul {
@@ -103,14 +100,12 @@ ul {
 .action {
   display: flex;
   justify-content: space-around;
-  background-color: crimson;
   padding-top: 19%;
 }
 
 .contentbox {
   display: flex;
   flex-direction: column;
-  border: 5px solid red; 
   height: 100vh;
   z-index: 100;
 }
