@@ -60,8 +60,7 @@ body {
 .container {
   margin-top: 0;
   display: flex;
-  width: 381px10;
-  height: 701.32px;
+  height: 100vh;
   flex-direction: column;
 }
 
