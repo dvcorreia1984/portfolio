@@ -1,6 +1,6 @@
 /* General settings */
-* {
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Header */
@@ -43,8 +43,8 @@
 }
 
 /* Colours for each box */
-.page1 {
-  background: white;
+.page1bg {
+  margin-top: 48.8px;
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
   display: flex;
@@ -60,4 +60,25 @@
   width: 381px;
   height: 6351px;
   flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  height: 211px;
+  width: 327px;
+  margin: 112px 27px;
+  border: solid 1px red;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 5px;
+  color: #172b4d;
+}
+
+h1 span {
+  color: #36b37e;
 }
