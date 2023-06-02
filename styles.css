@@ -58,7 +58,6 @@ body {
 }
 
 .heading {
-  position: absolute;
   display: flex;
   height: 30%;
   width: 100%;
@@ -79,14 +78,10 @@ h1 span {
 }
 
 .pg1content {
-  position: absolute;
   display: flex;
-  font-size: 20px;
+  flex-direction: column;
+  font-size: 1.3em;
   text-align: center;
-  height: 164px;
-  width: 327px;
-  margin: 350px 27px 164px 27px;
-  padding-left: 20px;
   background-color: greenyellow;
 }
 
