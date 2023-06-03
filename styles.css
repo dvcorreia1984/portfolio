@@ -282,3 +282,8 @@ h3 {
 #group {
   background-position: left;
 }
+
+#languages {
+  position: center;
+  padding: 0 40% 
+}
