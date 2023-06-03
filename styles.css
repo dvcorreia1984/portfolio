@@ -80,11 +80,15 @@ h4 {
 h5 {
   color: #172b4d;
   text-align: center;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 h6 {
   color: #172b4d;
   text-align: center;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .pg1content {
