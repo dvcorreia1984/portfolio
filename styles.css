@@ -201,12 +201,14 @@ button {
   color:white;
   background-color: #36b37f;
   border: none;
-  border-radius: 4%;
   color: white;
   text-align: center;
-  padding: 4%;
-  cursor: pointer;
   margin: 10% auto;
+  border-radius: 5px;
+  border: 1px solid #36b37e;
+  padding: 10px 20px;
+  font-size: 0.6em;
+  cursor: pointer;
 }
 
 .lightbtn {
