@@ -210,10 +210,8 @@ button {
 
 .lightbtn {
   flex-direction: row;
-  
   color:#172b4d;
   background-color: #d0d9d4;
-
 }
 
 .btn {
@@ -221,8 +219,17 @@ button {
 }
 
 .minimenu {
-  display: flex;
+  display: grid;
   flex-direction: row;
-  font-size: xx-small;
-  background-color: palevioletred;
+  font-size: 8px;
+}
+
+.button2 {
+  color: #172b4d;
+  background-color: #d0d9d4;
+  border: none;
+  border-radius: 4%;
+  padding: 4%;
+  cursor: pointer;
+  margin: 10% auto;
 }
