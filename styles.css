@@ -210,6 +210,14 @@ button {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #27ae60;
+}
+
+.button:active {
+  background-color: #008552;
+}
+
 .lightbtn {
   flex-direction: row;
   color: #172b4d;
@@ -313,4 +321,16 @@ button {
   width: 40%;
   margin-left: 30%;
   margin-top: 15px;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
