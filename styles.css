@@ -229,6 +229,7 @@ button {
   bottom: 0px;
 }
 
+
 .button2 {
   color: #172b4d;
   background-color: #ebf0ee;
@@ -283,12 +284,45 @@ h3 {
   background-position: left;
 }
 
-#languages {
-  position: center;
-  padding: 0 40% 
-}
-
 .greyspace {
+  display: flex;
+  flex-direction: column;
   background-color: #ebf0ee;
   border-radius: 5%;
+}
+
+.button3 {
+  color: #36b37f;
+  background-color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 5%;
+  cursor: pointer;
+  margin: 10% auto;
+  font-size: 8px;
+  padding: 5px;
+}
+
+.icon {
+  background-color: chocolate;
+}
+
+#language {
+  width: 40%;
+  margin-left:30%;
+  margin-top:15px
+}
+
+
+#frameworks {
+  width: 40%;
+  margin-left:30%;
+  margin-top:15px
+}
+
+
+#skills {
+  width: 40%;
+  margin-left:30%;
+  margin-top:15px
 }
