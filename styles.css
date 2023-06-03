@@ -221,11 +221,11 @@ button {
 }
 
 .minimenu {
+  list-style-type: none;
   display: flex;
   align-items: center;
-  padding: 5px 0;
-  width: max-content;
-  bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .button2 {
@@ -233,9 +233,9 @@ button {
   background-color: #ebf0ee;
   border: none;
   border-radius: 5%;
-  padding: 5%;
+  padding: 5px 10px;
   cursor: pointer;
-  margin: 10% auto;
+  margin-right: 10px;
   font-size: 8px;
 }
 
