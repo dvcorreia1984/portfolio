@@ -148,7 +148,7 @@ i {
 }
 
 .line {
-  height: ; 
+  height: 2px;
   background-color: #36b37e;
   border-radius: 1px; 
   width: 15%;
@@ -249,4 +249,13 @@ h3 {
 
 .tilebut {
   display: flex;
+}
+
+.about {
+  background-color: coral;
+  /*background-image: url(./Assets/About.png);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-color: 3px solid salmon;
 }
