@@ -105,15 +105,16 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
   padding: 10px;
   margin-top: 17%;
 }
 
 .griditem {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 2%;
 }
 
 i {
@@ -148,9 +149,6 @@ i {
   margin: 0 auto;
 }
 
-
-
-
 .social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
   padding-top: 9%;
   height: 14px;
@@ -172,8 +170,7 @@ i {
   height: 16px;
 }
 
-.fa {
-
+.tile {
+  display: flex;
 }
-
 
