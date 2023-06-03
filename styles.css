@@ -12,28 +12,22 @@ body {
 /* Header */
 
 .topbar {
-  order: 1;
-  position: relative;
+  position: r;
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
   height: 7.2%;
+  background-color: aquamarine;
+  margin-bottom: 5%;
 }
 
 .ham {
-  height: 40px;
-  width: 40px;
   display: flex;
   float: right;
-  color: black;
+  color: #172b4d;
   margin-top: 4px;
   margin-right: 24px;
-}
-
-.bars {
-  display: flex;
-  width: 375px;
-  height: 44px;
+  background-color: blueviolet;
 }
 
 .box {
@@ -64,10 +58,10 @@ body {
   justify-content: space-around;
   text-align: center;
   margin-top: 20%;
+  padding-bottom: 8%;
 }
 
 h1 {
-  font-size: 3em ;
   color: #172b4d;
   text-align: center;
 }
@@ -79,9 +73,9 @@ h1 span {
 .pg1content {
   display: flex;
   flex-direction: column;
-  font-size: 1.6em;
   text-align: center;
-  padding: 1%;;
+  font-size: 85%;
+  padding-bottom: 7%;
 }
 
 .social {
@@ -94,13 +88,17 @@ ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-	padding: 5% 22% 5% 22%;
+	padding: 0% 22% 15% 22%;
+}
+
+a {
+  size: 70%;
 }
 
 .action {
   display: flex;
   justify-content: space-around;
-  padding-top: 19%;
+  color: #172b4d;
 }
 
 .contentbox {
@@ -108,12 +106,11 @@ ul {
   flex-direction: column;
   height: 100vh;
   z-index: 100;
-  border: 10px solid goldenrod;
 }
 
 .works {
   background-color: aqua;;
-  padding:10% 10% 6% 10%;
+  padding: 10% 10% 6% 10%;
 }
 
 .grid-container {
@@ -126,9 +123,54 @@ ul {
 .griditem {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
   text-align: center;
+}
+
+i {
+  font-size: 0.8em;
+  padding:2%;
+  margin-right: 5%;
+}
+
+.action-button {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: #172b4d;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+
+.round-button:active {
+  background-color: #008552;
+}
+
+.round-button:hover {
+  background-color: #36b37f;
+  box-shadow: 0px 8px 16px 0px hsba(155, 70%, 70%, 0.24);
+}
+
+
+
+.social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
+  padding-top: 9%;
+  height: 14px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
 }
 
 
