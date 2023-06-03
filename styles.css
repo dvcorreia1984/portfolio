@@ -114,7 +114,7 @@ a {
   flex-direction: column;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  border-radius: 2%;
+  ;
 }
 
 i {
@@ -174,3 +174,25 @@ i {
   display: flex;
 }
 
+button {
+  color:white;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4%;
+  color: white;
+  text-align: center;
+  padding: 4%;
+  transition-duration: 0.3s; 
+  cursor: pointer;
+  margin: 10% auto;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: row;
+  height: 130px;
+}
+
+.whitespace {
+  background-color: white;
+}
