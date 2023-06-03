@@ -207,7 +207,6 @@ button {
   padding: 10px 20px;
   font-size: 0.6em;
   cursor: pointer;
-  justify-content: ;
 }
 
 .lightbtn {
@@ -225,8 +224,7 @@ button {
   align-items: center;
   padding: 5px 0px;
   width: max-content
-  left: calc(50% - 327px/2);
-  bottom: 0px;
+  bottom; 
 }
 
 
