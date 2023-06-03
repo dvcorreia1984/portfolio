@@ -108,9 +108,7 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
   margin-top: 17%;
-  background-color: aqua;
 }
 
 .griditem {
@@ -209,6 +207,7 @@ button {
   padding: 10px 20px;
   font-size: 0.6em;
   cursor: pointer;
+  justify-content: ;
 }
 
 .lightbtn {
@@ -246,4 +245,8 @@ h3 {
   font-size: 1em;
   font-weight: bold;
   padding: 5%;
+}
+
+.tilebut {
+  display: flex;
 }
