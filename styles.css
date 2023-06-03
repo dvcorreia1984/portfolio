@@ -194,6 +194,7 @@ i {
 
 .whitespace {
   background-color: white;
+  border-radius: 5%;
 }
 
 button {
@@ -219,17 +220,28 @@ button {
 }
 
 .minimenu {
-  display: grid;
-  flex-direction: row;
-  font-size: 8px;
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+  width: max-content
+  left: calc(50% - 327px/2);
+  bottom: 0px;
 }
 
 .button2 {
   color: #172b4d;
-  background-color: #d0d9d4;
+  background-color: #ebf0ee;
   border: none;
-  border-radius: 4%;
+  border-radius: 5%;
   padding: 4%;
   cursor: pointer;
   margin: 10% auto;
+  font-size: 8px;
+  padding: 5px;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5%;
 }
