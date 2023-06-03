@@ -99,8 +99,7 @@ a {
 }
 
 .works {
-  background-color: aqua;;
-  padding: 10% 10% 6% 10%;
+  padding: 6% 10% 6% 10%;
 }
 
 .grid-container {
@@ -108,6 +107,7 @@ a {
   grid-template-columns: auto auto auto;
   background-color: #2196F3;
   padding: 10px;
+  margin-top: 17%;
 }
 
 .griditem {
@@ -139,6 +139,15 @@ i {
   background-color: #36b37f;
   box-shadow: 0px 8px 16px 0px hsba(155, 70%, 70%, 0.24);
 }
+
+.line {
+  height: ; 
+  background-color: #36b37e;
+  border-radius: 1px; 
+  width: 15%;
+  margin: 0 auto;
+}
+
 
 
 
