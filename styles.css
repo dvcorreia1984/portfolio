@@ -252,10 +252,10 @@ h3 {
 }
 
 .about {
-  background-color: coral;
-  /*background-image: url(./Assets/About.png);*/
-  background-size: cover;
+  background-image: url(./Assets/Mask\ Group.svg);
+  background-size: 3em;
   background-repeat: no-repeat;
+  background-position: top right;
   padding: 10px 0;
   border-color: 3px solid salmon;
 }
@@ -276,5 +276,9 @@ h3 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: auto;
+}
 
+#group {
+  background-position: left;
 }
