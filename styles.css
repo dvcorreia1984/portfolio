@@ -199,6 +199,7 @@ i {
 }
 
 button {
+  display: flex;
   color: white;
   background-color: #36b37f;
   text-align: center;
