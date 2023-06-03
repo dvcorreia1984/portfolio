@@ -60,6 +60,10 @@ h1 span {
   color: #36b37e;
 }
 
+h3 {
+  text-align: center;
+}
+
 .pg1content {
   display: flex;
   flex-direction: column;
@@ -105,16 +109,20 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
   margin-top: 17%;
+  background-color: aqua;
 }
 
 .griditem {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  ;
+  width: 90%;
+  margin: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 i {
@@ -170,8 +178,22 @@ i {
   height: 16px;
 }
 
+/* Tile */
+
 .tile {
   display: flex;
+  flex-direction: row;
+  font-size: 1em;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: row;
+  height: 136px;
+}
+
+.whitespace {
+  background-color: white;
 }
 
 button {
@@ -182,17 +204,25 @@ button {
   color: white;
   text-align: center;
   padding: 4%;
-  transition-duration: 0.3s; 
   cursor: pointer;
   margin: 10% auto;
 }
 
-.placeholder {
-  display: flex;
+.lightbtn {
   flex-direction: row;
-  height: 130px;
+  
+  color:#172b4d;
+  background-color: #d0d9d4;
+
 }
 
-.whitespace {
-  background-color: white;
+.btn {
+  background-color: #008552;
+}
+
+.minimenu {
+  display: flex;
+  flex-direction: row;
+  font-size: xx-small;
+  background-color: palevioletred;
 }
