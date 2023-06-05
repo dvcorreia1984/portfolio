@@ -367,3 +367,34 @@ div.griditem:nth-child(11) > ul:nth-child(3) {
 div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   height: 30px;
 }
+
+footer {
+  background-image: url(./Assets/frame.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 20%;
+  background-color: #36b37e;
+}
+
+#footertext {
+  display: flex;
+  flex: none;
+  background-color: aqua;
+  font: inter;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  width: 327px;
+  height: 363px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 381px;
+  height: 600px;
+  padding: 10px;
+  border: 3px solid orange;
+}
+
