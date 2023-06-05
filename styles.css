@@ -10,29 +10,14 @@ body {
 }
 
 /* Header */
+
 .topbar {
-  order: 1;
-  position: fixed;
+  position: r;
   display: flex;
   flex-direction: row-reverse;
-  height: 48px;
-  width: 375px;
-}
-
-.ham {
-  height: 40px;
-  width: 40px;
-  display: flex;
-  float: right;
-  color: black;
-  margin-top: 4px;
-  margin-right: 24px;
-}
-
-.bars {
-  display: flex;
-  width: 375px;
-  height: 44px;
+  width: 100%;
+  height: 7.2%;
+  margin-bottom: 5%;
 }
 
 .box {
@@ -44,73 +29,341 @@ body {
   text-align: center;
 }
 
-.page1bg {
-  position: relative;
-  background-size: cover;
-  margin-top: 48.8px;
+.container {
+  display: flex;
   background-image: url("./Assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
-  height: 653.32px;
-}
-
-/* We start writing out flexbox here. The above is just page setup */
-.container {
-  margin-top: 0;
-  display: flex;
-  width: 381px;
-  height: 701.32px;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   flex-direction: column;
 }
 
 .heading {
-  position: absolute;
   display: flex;
-  height: 211px;
-  width: 327px;
-  margin: 112px 27px 0 27px;
+  height: 30%;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  margin-top: 20%;
+  padding-bottom: 8%;
 }
 
 h1 {
-  font-size: 40px;
-  margin: 5px;
   color: #172b4d;
+  text-align: center;
 }
 
 h1 span {
   color: #36b37e;
 }
 
-.pg1content {
-  position: absolute;
-  display: flex;
-  font-size: 20px;
+h2 {
+  color: #172b4d;
   text-align: center;
-  height: 164px;
-  width: 327px;
-  margin: 350px 27px 164px 27px;
-  padding-left: 20px;
 }
 
-.pg1content > p:nth-child(1) {
-  margin-top: 0;
-  margin-bottom: 0;
+h3 {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5%;
+}
+
+h4 {
+  color: #172b4d;
+  text-align: center;
+}
+
+h5 {
+  color: #172b4d;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h6 {
+  color: #172b4d;
+  text-align: center;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.pg1content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 85%;
+  padding-bottom: 7%;
 }
 
 .social {
-  position: absolute;
-  margin-left: 105px;
-  margin-bottom: 157.6px;
-  width: 170.17px;
-  height: 19.62px;
-  margin-top: 520px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0 22% 15% 22%;
+}
+
+a {
+  size: 70%;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  color: #172b4d;
+}
+
+.contentbox {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 100;
+}
+
+.works {
+  padding: 6% 10% 6% 10%;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 17%;
+}
+
+.griditem {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  width: 90%;
+  margin: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 0.8em;
+  padding: 2%;
+  margin-right: 5%;
+}
+
+.action-button {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  color: #172b4d;
+  font-size: 16px;
+  padding: 2px 5px;
+}
+
+.round-button:active {
+  background-color: #008552;
+}
+
+.round-button:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px 0 hsba(155, 70%, 70%, 0.24);
+}
+
+.line {
+  height: 2px;
+  background-color: #36b37e;
+  border-radius: 1px;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
+  padding-top: 9%;
+  height: 14px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+.social > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+  height: 16px;
+}
+
+/* Tile */
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: row;
+  height: 136px;
+}
+
+.whitespace {
+  background-color: white;
+  border-radius: 5%;
+}
+
+button {
+  display: flex;
+  color: white;
+  background-color: #36b37f;
+  text-align: center;
+  margin: 10% auto;
+  border-radius: 5px;
+  border: 1px solid #36b37e;
+  padding: 10px 20px;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #27ae60;
+}
+
+.button:active {
+  background-color: #008552;
+}
+
+.lightbtn {
+  flex-direction: row;
+  color: #172b4d;
+  background-color: #d0d9d4;
+}
+
+.btn {
+  background-color: #008552;
+}
+
+.minimenu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
   padding: 0;
+}
+
+.button2 {
+  color: #172b4d;
+  background-color: #ebf0ee;
+  border: none;
+  border-radius: 5%;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 8px;
+}
+
+.tilebut {
+  display: flex;
+}
+
+.about {
+  background-image: url(./Assets/Mask\ Group.svg);
+  background-size: 3em;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 10px 0;
+  border-color: 3px solid salmon;
+}
+
+#h1p3 {
+  font-size: 160%;
+  padding: 10px;
+  margin-top: 10%;
+}
+
+#pp3 {
+  text-align: center;
+  font-size: 85%;
+  padding: 5%;
+}
+
+#pg3but {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+#group {
+  background-position: left;
+}
+
+.greyspace {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf0ee;
+  border-radius: 5%;
+}
+
+.button3 {
+  color: #36b37f;
+  background-color: white;
+  border: none;
+  border-radius: 5%;
+  padding: 5%;
+  cursor: pointer;
+  margin: 10% auto;
+  font-size: 8px;
+}
+
+.icon {
+  background-color: chocolate;
+}
+
+#language {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+#frameworks {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+#skills {
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+div.griditem:nth-child(11) > ul:nth-child(3) {
+  height: 30px;
+}
+
+div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
+  height: 30px;
 }
