@@ -2,7 +2,6 @@
 
 html {
   width: 381px;
-  border: 5px solid goldenrod;
 }
 
 * {
@@ -64,13 +63,11 @@ h6 {
   width: 347px;
   height: 40px;
   margin-bottom: 5%;
-  border: 2px solid red;
   left: 5px;
   padding: 4px 24px 4px 4px;
 }
 
 .menu {
-  background-color: aqua;
   width: 40px;
   height: 40px;
   right: 30px;
@@ -91,6 +88,7 @@ i.fa.fa-bars {
   background-repeat: no-repeat;
   background-size: auto;
   background-position-y: 52px;
+  height: 710px;
 }
 
 /*Page 1*/
@@ -155,12 +153,15 @@ i.fa.fa-bars {
 }
 
 .works {
+  font-size: 40px;
   padding: 6% 10% 6% 10%;
 }
 
 .grid-container {
   display: grid;
-  margin-top: 17%;
+  margin-top: 13%;
+  width: 327px;
+  height: 474px;
 }
 
 .griditem {
@@ -169,7 +170,7 @@ i.fa.fa-bars {
   justify-items: center;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
-  width: 90%;
+  width: 327px;
   margin: 16px;
   border-radius: 8px;
   box-sizing: border-box;
@@ -199,7 +200,7 @@ i {
 }
 
 .line {
-  height: 2px;
+  height: 4px;
   background-color: #36b37e;
   border-radius: 1px;
   width: 15%;
@@ -208,23 +209,23 @@ i {
 
 .social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
   padding-top: 9%;
-  height: 14px;
+  height: 20px;
 }
 
 .social > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
-  height: 16px;
+  height: 20px;
 }
 
 .social > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
-  height: 16px;
+  height: 17px;
 }
 
 .social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
-  height: 16px;
+  height: 20px;
 }
 
 .social > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
-  height: 16px;
+  height: 20px;
 }
 
 /* Tile */
