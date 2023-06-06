@@ -114,15 +114,12 @@ i.fa.fa-bars {
   text-align: center;
 }
 
-
-
-
-
 .pg1content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 85%;
+  font-size: 20px;
+  line-height: 28px;
   padding-bottom: 7%;
 }
 
@@ -267,11 +264,11 @@ button {
 }
 
 .button:hover {
-  background-color: #27ae60;
+  /* background-color: #27ae60;  */
 }
 
 .button:active {
-  background-color: #008552;
+  /* background-color: #008552; */
 }
 
 .lightbtn {
@@ -471,6 +468,7 @@ footer {
   width: 15%;
   margin: 10px auto;
 }
+
 
 
 
