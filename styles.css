@@ -160,21 +160,21 @@ i.fa.fa-bars {
 .grid-container {
   display: grid;
   margin-top: 13%;
-  width: 327px;
-  height: 474px;
+  justify-content: center;
 }
+
+
 
 .griditem {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   width: 327px;
-  margin: 16px;
-  border-radius: 8px;
-  box-sizing: border-box;
+  height: 470px;
+  border-radius: 10px;
 }
+
 
 i {
   font-size: 0.8em;
