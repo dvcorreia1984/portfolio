@@ -262,7 +262,7 @@ button {
   border-radius: 5px;
   border: 1px solid #36b37e;
   padding: 10px 20px;
-  font-size: 0.6em;
+  font-size: 17px;
   cursor: pointer;
 }
 
@@ -306,14 +306,7 @@ button {
   display: flex;
 }
 
-.about {
-  background-image: url(./Assets/Mask\ Group.svg);
-  background-size: 3em;
-  background-repeat: no-repeat;
-  background-position: top right;
-  padding: 10px 0;
-  border-color: 3px solid salmon;
-}
+
 
 #h1p3 {
   font-size: 160%;
@@ -459,7 +452,25 @@ footer {
   text-align: center;
 }
 
+.social-footer ul {
+  display: flex;
+  flex-grow: 1;
+  padding: 24px;
+  width: 86%;
+}
 
+.social-footer li {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottomline {
+  height: 2px;
+  background-color: #172b4d;
+  border-radius: 1px;
+  width: 15%;
+  margin: 10px auto;
+}
 
 
 
