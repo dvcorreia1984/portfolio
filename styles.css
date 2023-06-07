@@ -1,9 +1,4 @@
 /* General settings */
-
-html {
-  width: 381px;
-}
-
 * {
   margin: 0;
 }
@@ -377,14 +372,22 @@ button {
 }
 
 @media screen and (min-width: 375px) {
-  body {
-    font-size: 14px;
+
+  .container {
+    background-image: url("./Assets/header-illsutration-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 52px;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
+ 
+  .container {
+    background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 
@@ -567,3 +570,5 @@ textarea::-webkit-resizer {
   justify-items: center;
   padding-right: 10%;
 }
+
+
