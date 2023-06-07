@@ -29,7 +29,8 @@ h2 {
 
 h3 {
   text-align: center;
-  font-size: 1em;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: bold;
   padding: 5%;
 }
@@ -157,16 +158,10 @@ i.fa.fa-bars {
 
 .grid-container {
   display: grid;
-  margin-top: 13%;
-<<<<<<< HEAD
-  width: 327px;
+  margin-top: 5%;
   height: fit-content;
-=======
   justify-content: center;
->>>>>>> 2a91ae27bff27f714a8e6a467639b2e2f3f1b549
 }
-
-
 
 .griditem {
   display: flex;
@@ -176,6 +171,7 @@ i.fa.fa-bars {
   width: 327px;
   height: 470px;
   border-radius: 10px;
+  justify-content: flex-end;
 }
 
 
@@ -264,11 +260,13 @@ button {
 }
 
 .button:hover {
-  /* background-color: #27ae60;  */
+  background-color: #27ae60;  
+  box-shadow: 0px 8px 16px 0px #36B37F3D;
+
 }
 
 .button:active {
-  /* background-color: #008552; */
+  background-color: #008552; 
 }
 
 .lightbtn {
@@ -282,10 +280,13 @@ button {
 }
 
 .minimenu {
+  display: flex;
+  justify-content: space-evenly;
   list-style-type: none;
   align-items: center;
   margin: 0;
   padding: 0;
+  
 }
 
 .button2 {
@@ -296,28 +297,28 @@ button {
   padding: 5px 10px;
   cursor: pointer;
   margin-right: 10px;
-  font-size: 8px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .tilebut {
   display: flex;
 }
 
-
-
 #h1p3 {
-  font-size: 160%;
+  font-size: 40px;
+  line-height: 52px;
   padding: 10px;
   margin-top: 10%;
 }
 
 #pp3 {
   text-align: center;
-  font-size: 85%;
+  font-size: 20px;
   padding: 5%;
 }
 
-#pg3but {
+#pgbut {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -391,6 +392,12 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
 
 
 /* About me */ 
+
+.about {
+  background-image: url(./Assets/illustration\ 2-about\ me\ mobile.svg), url(./Assets/Mask\ Group.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 104%, 100% -12%;
+}
 
 .wrapper {
   display: flex;
