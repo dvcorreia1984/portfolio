@@ -119,6 +119,12 @@ Open index.html using live server extension
 - Twitter: [@twitterhandle](https://twitter.com/dvcorreia1984)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/dvcorreia)
 
+👤 **Ye Min Thu**
+
+- GitHub: [@githubhandle](https://github.com/mryeminthu)
+- Twitter: [@twitterhandle](https://twitter.com/mryeminthu)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ye-min-thu-76456a214/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
