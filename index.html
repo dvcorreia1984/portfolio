@@ -226,43 +226,28 @@
   
 <div><p id=footertext>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
   
-
+<div class="form">
 <form action="https://formspree.io/f/meqwblog" method="post">
-  <fieldset>
-    <legend>Login</legend>
-  <ul>
+   <ul>
     <li>
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="user_name" placeholder="Full Name" required="Name">
+      <input type="text" id="name" name="user_name" placeholder="Full Name" required="Name" maxlength="30">
     </li>
     <li>
-      <label for="mail">Email address:</label>
-      <input type="email" id="mail" name="user_email" placeholder="Email Address">
+      <input type="email" id="mail" name="user_email" placeholder="Email Address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
     </li>
     <li>
-      <label for="msg">Hey I'd like to connect to...</label>
-      <textarea id="msg" name="user_message" placeholder="Hey I'd like to connect to..." minlength="30" maxlength="300"></textarea>
+      <textarea id="msg" name="user_message" placeholder="Hey I'd like to connect to..." maxlength="500"></textarea>
     </li>
-    <li id="submitbutton" class="button">
-      <button type="submit" name="submit">Get in touch</button>
+    <li id="submitbutton">
+      <button type="submit" name="submit" class="button">Get in touch</button>
     </li>
   </ul>
-  </fieldset>
 </form>
+</div>
 
-  
+<div class="email">victor@onsleer.co.za</div>
 
- 
-
-
-
-
-
-
-
-<div class="email">myemailhere@gmail.com</div>
-
-<div class="social-footer">
+<div class="social-footer2">
   <ul>
     <li><a href="https://twitter.com/dvcorreia1984"> <img src="./Assets/social/twitter.svg" alt="Twitter"></a></li>
     <li><a href="https://www.linkedin.com/in/dvcorreia/"><img src="./Assets/social/Linkedin icon.svg" alt="Linkedin"></a></li>

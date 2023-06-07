@@ -2,6 +2,7 @@
 
 html {
   width: 381px;
+  border: 1px solid red;
 }
 
 * {
@@ -262,7 +263,6 @@ button {
 .button:hover {
   background-color: #27ae60;  
   box-shadow: 0px 8px 16px 0px #36B37F3D;
-
 }
 
 .button:active {
@@ -448,6 +448,8 @@ footer {
 }
 
 .email {
+  font-weight: 400;
+  color: #43526e;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
@@ -471,18 +473,6 @@ footer {
   border-radius: 1px;
   width: 15%;
   margin: 10px auto;
-}
-
-/* input:invalid {
-  border: 2px dashed red;
-} */
-
-input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
-}
-
-input:valid {
-  border: 2px solid black;
 }
 
 .grid-container2 {
@@ -520,17 +510,73 @@ li.button3 {
   margin: 5px;
 }
 
+form ul {
+  padding-left: 5%;
+  list-style-type: none;
+}
+
 .form {
-  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  border: none;
 }
 
-.fieldset {
-  background-color: aquamarine;
+input {
+  font-family: Inter;
+  padding-left: 16px;
+  color: #6b778c;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 24px;
+  background: white;
+  width: 327px;
+  height: 48px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
 }
 
-.legend {
-  background-color: chocolate;
+textarea {
+  font-family: Inter;
+  padding-left: 16px;
+  color: #42526e;
+  font-weight: 400;
+  margin-top: 24px;
+  width: 327px;
+  height: 90px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #42526e;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  background-image: url(./Assets/Union.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
+
+textarea::-webkit-resizer {
+
+}
+
+.social-footer2 ul {
+  display: flex;
+  list-style-type: none;
+  display: flex;
+  padding: 24px;
+  width: 86%;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social-footer2 ul li {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-right: 10%;
+}
+
+
 
 
 
