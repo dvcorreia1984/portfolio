@@ -329,22 +329,21 @@ button {
   background-position: left;
 }
 
-.greyspace {
-  display: flex;
-  flex-direction: column;
-  background-color: #ebf0ee;
-  border-radius: 5%;
-}
-
 .button3 {
+  display: inline-block;
   color: #36b37f;
   background-color: white;
   border: none;
   border-radius: 5%;
-  padding: 5%;
+  padding: 3%;
   cursor: pointer;
   margin: 10% auto;
-  font-size: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  width: 49px;
+  height: 16px;
+  font-weight: 600;
 }
 
 .icon {
@@ -486,6 +485,36 @@ input:invalid:required {
 
 input:valid {
   border: 2px solid black;
+}
+
+.grid-container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.griditem2 {
+  width: 327px;
+  height: 316px;
+  margin-bottom: 24px;
+  border: 1px solid #c1c7d0;
+  border-radius: 5%;
+  background-color: #ebf0ee;
+}
+
+.minimenu2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.minimenu2 {
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  height: min-content;
+  border-radius: 10px;;
 }
 
 
