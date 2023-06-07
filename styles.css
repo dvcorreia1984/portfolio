@@ -54,7 +54,6 @@ h6 {
   line-height: 32px;
 }
 
-
 /* Header */
 
 .topbar {
@@ -79,7 +78,7 @@ i.fa.fa-bars {
   height: 24px;
   padding: 8px;
   font-size: 24px;
-  bottom:20 px;
+  bottom: 20px;
 }
 
 /* Background image */
@@ -92,7 +91,7 @@ i.fa.fa-bars {
   height: 710px;
 }
 
-/*Page 1*/
+/* Page 1 */
 
 .heading1 {
   font-size: 33px;
@@ -174,7 +173,6 @@ i.fa.fa-bars {
   justify-content: flex-end;
 }
 
-
 i {
   font-size: 0.8em;
   padding: 2%;
@@ -204,6 +202,11 @@ i {
   border-radius: 1px;
   width: 15%;
   margin: 0 auto;
+}
+
+ul form {
+  padding-left: 5%;
+  list-style-type: none;
 }
 
 .social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
@@ -260,12 +263,12 @@ button {
 }
 
 .button:hover {
-  background-color: #27ae60;  
-  box-shadow: 0px 8px 16px 0px #36B37F3D;
+  background-color: #27ae60;
+  box-shadow: 0 8px 16px 0 #36b37f3d;
 }
 
 .button:active {
-  background-color: #008552; 
+  background-color: #008552;
 }
 
 .lightbtn {
@@ -285,7 +288,6 @@ button {
   align-items: center;
   margin: 0;
   padding: 0;
-  
 }
 
 .button2 {
@@ -332,7 +334,6 @@ button {
   color: #36b37f;
   background-color: white;
   border: none;
-  border-radius: 5%;
   padding: 3%;
   cursor: pointer;
   font-size: 12px;
@@ -377,6 +378,13 @@ button {
   }
 }
 
+.social-footer ul {
+  display: flex;
+  flex-grow: 1;
+  padding: 24px;
+  width: 86%;
+}
+
 div.griditem:nth-child(11) > ul:nth-child(3) {
   height: 30px;
 }
@@ -385,9 +393,7 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   height: 30px;
 }
 
-
-
-/* About me */ 
+/* About me */
 
 .about {
   background-image: url(./Assets/illustration\ 2-about\ me\ mobile.svg), url(./Assets/Mask\ Group.svg);
@@ -410,7 +416,6 @@ footer {
 
 #footertext {
   flex: none;
-  font: inter;
   font-weight: 600;
   font-size: 40px;
   line-height: 52px;
@@ -436,7 +441,7 @@ footer {
   margin-bottom: 24px;
 }
 
-.formitem  {
+.formitem {
   width: 303px;
   font-weight: 400;
   font-style: italic;
@@ -452,13 +457,6 @@ footer {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-}
-
-.social-footer ul {
-  display: flex;
-  flex-grow: 1;
-  padding: 24px;
-  width: 86%;
 }
 
 .social-footer li {
@@ -479,8 +477,8 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
 }
+
 .griditem2 {
   width: 327px;
   height: 316px;
@@ -501,17 +499,12 @@ ul.minimenu2 {
   list-style-type: none;
   height: min-content;
   padding-left: 0;
-  justify-content:center;
+  justify-content: center;
   margin-top: 16px;
 }
 
 li.button3 {
   margin: 5px;
-}
-
-form ul {
-  padding-left: 5%;
-  list-style-type: none;
 }
 
 .form {
@@ -521,7 +514,6 @@ form ul {
 }
 
 input {
-  font-family: Inter;
   padding-left: 16px;
   color: #6b778c;
   font-weight: 400;
@@ -535,7 +527,6 @@ input {
 }
 
 textarea {
-  font-family: Inter;
   padding-left: 16px;
   color: #42526e;
   font-weight: 400;
@@ -544,8 +535,6 @@ textarea {
   height: 90px;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 400;
-  color: #42526e;
   border: 1px solid #60c095;
   border-radius: 4px;
   background-image: url(./Assets/Union.svg);
@@ -554,13 +543,12 @@ textarea {
 }
 
 textarea::-webkit-resizer {
-
+  background-color: transparent;
 }
 
-.social-footer2 ul {
+ul.social-footer2 {
   display: flex;
   list-style-type: none;
-  display: flex;
   padding: 24px;
   width: 86%;
   align-items: flex-end;
@@ -574,9 +562,3 @@ textarea::-webkit-resizer {
   justify-items: center;
   padding-right: 10%;
 }
-
-
-
-
-
-
