@@ -139,6 +139,16 @@ i.fa.fa-bars {
   size: 80%;
 }
 
+.social-footer2 ul {
+  display: flex;
+  list-style-type: none;
+  padding: 24px;
+  width: 86%;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .action {
   display: flex;
   justify-content: space-around;
@@ -385,6 +395,10 @@ button {
   width: 86%;
 }
 
+.form ul {
+  list-style-type: none;
+}
+
 div.griditem:nth-child(11) > ul:nth-child(3) {
   height: 30px;
 }
@@ -544,16 +558,6 @@ textarea {
 
 textarea::-webkit-resizer {
   background-color: transparent;
-}
-
-ul.social-footer2 {
-  display: flex;
-  list-style-type: none;
-  padding: 24px;
-  width: 86%;
-  align-items: flex-end;
-  justify-content: center;
-  flex-direction: row;
 }
 
 .social-footer2 ul li {
