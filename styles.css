@@ -2,7 +2,6 @@
 
 html {
   width: 381px;
-  border: 1px solid red;
 }
 
 * {
@@ -468,9 +467,9 @@ footer {
 }
 
 #bottomline {
-  height: 2px;
+  height: 3px;
   background-color: #172b4d;
-  border-radius: 1px;
+  border-radius: 2px;
   width: 15%;
   margin: 10px auto;
 }
