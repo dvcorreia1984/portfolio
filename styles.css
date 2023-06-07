@@ -158,21 +158,26 @@ i.fa.fa-bars {
 .grid-container {
   display: grid;
   margin-top: 13%;
+<<<<<<< HEAD
   width: 327px;
   height: fit-content;
+=======
+  justify-content: center;
+>>>>>>> 2a91ae27bff27f714a8e6a467639b2e2f3f1b549
 }
+
+
 
 .griditem {
   display: flex;
   flex-direction: column;
-  justify-items: center;
   background-color: #ebf0ee;
   border: 1px solid #d0d9d4;
   width: 327px;
-  margin: 16px;
-  border-radius: 8px;
-  box-sizing: border-box;
+  height: 470px;
+  border-radius: 10px;
 }
+
 
 i {
   font-size: 0.8em;
@@ -464,9 +469,9 @@ footer {
   margin: 10px auto;
 }
 
-input:invalid {
+/* input:invalid {
   border: 2px dashed red;
-}
+} */
 
 input:invalid:required {
   background-image: linear-gradient(to right, pink, lightgreen);
