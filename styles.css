@@ -330,20 +330,18 @@ button {
 }
 
 .button3 {
-  display: inline-block;
   color: #36b37f;
   background-color: white;
   border: none;
   border-radius: 5%;
   padding: 3%;
   cursor: pointer;
-  margin: 10% auto;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  width: 49px;
   height: 16px;
   font-weight: 600;
+  border-radius: 10px;
 }
 
 .icon {
@@ -509,14 +507,30 @@ input:valid {
 }
 
 ul.minimenu2 {
-  background-color: bisque;
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   height: min-content;
-  border-radius: 10px;;
+  padding-left: 0;
+  justify-content:center;
+  margin-top: 16px;
 }
 
+li.button3 {
+  margin: 5px;
+}
+
+.form {
+  background-color: blueviolet;
+}
+
+.fieldset {
+  background-color: aquamarine;
+}
+
+.legend {
+  background-color: chocolate;
+}
 
 
 
