@@ -148,8 +148,6 @@ i.fa.fa-bars {
 .contentbox {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  z-index: 100;
 }
 
 .works {
@@ -161,7 +159,7 @@ i.fa.fa-bars {
   display: grid;
   margin-top: 13%;
   width: 327px;
-  height: 474px;
+  height: fit-content;
 }
 
 .griditem {
