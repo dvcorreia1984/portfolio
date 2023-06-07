@@ -379,6 +379,10 @@ button {
     background-size: 100%;
     background-position-y: 52px;
   }
+
+  .topbar {
+    width: 96%;
+  }
   
 }
 
@@ -389,6 +393,13 @@ button {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+
+  .topbar {
+    width: 96%;
+    position: relative;
+    margin-bottom: -100px;
+  }
+
 }
 
 .social-footer ul {
