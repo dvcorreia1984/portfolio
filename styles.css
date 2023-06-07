@@ -522,6 +522,7 @@ li.button3 {
 }
 
 .form {
+  padding-left: 24px;
   display: flex;
   flex-direction: column;
   border: none;
