@@ -410,11 +410,21 @@ button {
 
 @media screen and (min-width: 768px) {
 
+  main {
+    background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .container {
+    background-image: none;
+  }
+
   
   .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 0;
     font-weight: 600;
@@ -423,10 +433,18 @@ button {
     text-align: center;
   }
 
+  .heading1 {
+    margin-top: 0;
+  }
+
   /* Change the color of links on hover */
   .topbar a:hover {
     background-color: #04AA6D;
     color: white;
+  }
+
+  .topbar a {
+    padding: 3%;
   }
 
   i.fa.fa-bars {
@@ -439,12 +457,6 @@ button {
     margin-top: 5%;
     height: fit-content;
     justify-content: center;
-  }
-
-  .container {
-    background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 
   .topbar {
