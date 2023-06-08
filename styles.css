@@ -619,6 +619,11 @@ input {
   border-radius: 4px;
 }
 
+input:hover {
+  padding-left: 30px;
+  transition: 1s ease;
+}
+
 textarea {
   padding-left: 16px;
   color: #42526e;
