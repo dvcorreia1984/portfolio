@@ -12,12 +12,12 @@ body {
   color: #172b4d;
 }
 
-h1 {
+.h1black {
   color: #172b4d;
   text-align: center;
 }
 
-h1 span {
+.h1green {
   color: #36b37e;
 }
 
@@ -434,7 +434,13 @@ button {
   }
 
   .heading1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 0;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
   }
 
   /* Change the color of links on hover */
