@@ -387,6 +387,16 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    height: fit-content;
+    justify-content: center;
+  }
+
+
  
   .container {
     background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
@@ -397,7 +407,6 @@ button {
   .topbar {
     width: 96%;
     position: relative;
-    margin-bottom: -100px;
   }
 
 }
