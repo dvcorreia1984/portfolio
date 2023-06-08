@@ -502,6 +502,12 @@ button {
     display: none;
   }
 
+  .aboutdesktop{
+    background-color: violet;
+  }
+
+
+
 }
 
 .social-footer ul {
