@@ -72,6 +72,18 @@ h6 {
   justify-content: center;
 }
 
+#contact {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#portfolio {
+  display: none;
+}
+
 .menu {
   width: 40px;
   height: 40px;
@@ -415,15 +427,12 @@ button {
   .topbar a:hover {
     background-color: #04AA6D;
     color: white;
-}
+  }
 
   i.fa.fa-bars {
     display: none;
   }
 
-  
-
-  
   .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -441,6 +450,18 @@ button {
   .topbar {
     width: 96%;
     position: relative;
+  }
+
+  #contact {
+    display: block;
+  }
+  
+  #about {
+    display: block;
+  }
+  
+  #portfolio {
+    display: block;
   }
 
 }
