@@ -60,7 +60,7 @@ h6 {
 /* Header */
 
 .topbar {
-  position: absolute;
+  position: fixed;
   display: flex;
   overflow: hidden;
   flex-direction: row-reverse;
@@ -69,6 +69,9 @@ h6 {
   margin-bottom: 5%;
   left: 5px;
   padding: 4px 24px 4px 4px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .topnav a {
@@ -183,7 +186,7 @@ i.fa.fa-bars {
 
 .works {
   font-size: 40px;
-  padding: 6% 10% 6% 10%;
+  padding: 10% 10% 6% 10%;
 }
 
 .grid-container {
@@ -237,6 +240,7 @@ i {
 }
 
 form {
+  display: flex;
   flex-direction: column;
 }
 
@@ -345,8 +349,7 @@ button {
 #h1p3 {
   font-size: 40px;
   line-height: 52px;
-  padding: 10px;
-  margin-top: 10%;
+  padding: 10% 10% 0 10%;
 }
 
 #pp3 {
@@ -402,6 +405,18 @@ button {
   margin-top: 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .new-line::after {
+    content: '\a';
+    white-space: pre;
+  }
+
+  .topbar {
+    justify-content: flex-start !important;
+  }
+
+}
+
 @media screen and (min-width: 375px) {
   .container {
     background-image: url("./Assets/header-illsutration-mobile.svg");
@@ -416,6 +431,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
   main {
     background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
@@ -430,13 +449,15 @@ button {
   .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
+    align-items: flex-start;
     margin-bottom: 0;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
+    height: 8vw;
   }
 
   .heading1 {
@@ -447,7 +468,7 @@ button {
     font-size: 207%;
     line-height: 60px;
     letter-spacing: 0.37px;
-    padding: 7% 15% 0 15%;
+    padding: 15% 15% 0 15%;
   }
 
   .pg1content {
@@ -462,13 +483,15 @@ button {
   /* Change the color of links on hover */
   .topbar a {
     padding: 3%;
-    width: 96%;
     position: relative;
+    color: #172b4d;
+    font-size: 15px;
   }
 
   .topbar a:hover {
     background-color: #04aa6d;
     color: white;
+    border-radius: 10px;
   }
 
   i.fa.fa-bars {
@@ -493,10 +516,6 @@ button {
 
   #portfolio {
     display: block;
-  }
-
-  .action {
-    display: none;
   }
 
   #Aboutimage {
@@ -530,11 +549,6 @@ button {
     margin-bottom: 12px;
   }
 
-  .new-line::after {
-    content: '\a';
-    white-space: pre;
-  }
-
   .wrapper {
     flex-direction: row !important;
     align-items: flex-end;
@@ -551,6 +565,50 @@ button {
 
   textarea {
     width: 90% !important;
+  }
+
+  #bottomline {
+    display: none;
+  }
+
+  .social ul {
+    padding: 0 22%;
+  }
+
+  form {
+    display: inline;
+  }
+
+  button#formbutton {
+    margin-top: 20px;
+    display: inline;
+  }
+
+  #Contact {
+    background-image: url(./Assets/Desktop/illustration-1-contact-form-desktop.svg), url(./Assets/Desktop/illustration-2-contact-form-desktop.svg), url(./Assets/Desktop/contact\ form-illustratoin-3-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 110%, 26% 93%, 100% 100%;
+    height: 54vw;
+    background-size: 15%, 10%, 15%;
+  }
+
+  #footerline {
+    background-color: lightgrey;
+    height: 1px;
+    width: 100%;
+  }
+
+  footer {
+    background-image: none !important;
+  }
+
+  .social-footer2 ul {
+    width: 23%;
+    margin: 0 40%;
+  }
+
+  .wrapper.footer {
+    background-image: none !important;
   }
 }
 
@@ -588,7 +646,7 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   align-items: center;
 }
 
-footer {
+.wrapper.footer {
   background-image: url(./Assets/frame.svg);
   background-repeat: no-repeat;
   background-position: 100% 90%;
@@ -596,15 +654,14 @@ footer {
 }
 
 #footertext {
+  display: flex;
   flex: none;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 3vh;
   align-content: center;
   width: 327px;
-  height: 363px;
   margin: 54px 30px 54px 24px;
-  text-align: center;
+  text-align: justify;
 }
 
 .form-container {
