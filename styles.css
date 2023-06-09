@@ -236,6 +236,10 @@ i {
   margin: 0 auto;
 }
 
+form {
+  flex-direction: column;
+}
+
 ul form {
   padding-left: 5%;
   list-style-type: none;
@@ -399,7 +403,6 @@ button {
 }
 
 @media screen and (min-width: 375px) {
-
   .container {
     background-image: url("./Assets/header-illsutration-mobile.svg");
     background-repeat: no-repeat;
@@ -410,11 +413,9 @@ button {
   .topbar {
     width: 96%;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
-
   main {
     background-image: url("./Assets/Desktop/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
@@ -426,7 +427,6 @@ button {
     padding-bottom: 120px;
   }
 
-  
   .topbar {
     display: flex;
     flex-direction: row;
@@ -460,13 +460,15 @@ button {
   }
 
   /* Change the color of links on hover */
-  .topbar a:hover {
-    background-color: #04AA6D;
-    color: white;
-  }
-
   .topbar a {
     padding: 3%;
+    width: 96%;
+    position: relative;
+  }
+
+  .topbar a:hover {
+    background-color: #04aa6d;
+    color: white;
   }
 
   i.fa.fa-bars {
@@ -481,19 +483,14 @@ button {
     justify-content: center;
   }
 
-  .topbar {
-    width: 96%;
-    position: relative;
-  }
-
   #contact {
     display: block;
   }
-  
+
   #about {
     display: block;
   }
-  
+
   #portfolio {
     display: block;
   }
@@ -501,7 +498,7 @@ button {
   .action {
     display: none;
   }
- 
+
   #Aboutimage {
     background-image: url(./Assets/Desktop/aboutmedesktop1.svg);
     background-repeat: no-repeat;
@@ -525,7 +522,7 @@ button {
   #pp3 {
     padding: 2% 20% !important;
     font-size: 80%;
-    line-height: 24px;    
+    line-height: 24px;
   }
 
   button#aboutbutton {
@@ -549,13 +546,12 @@ button {
   }
 
   input {
-    width: 90% !important ;
+    width: 90% !important;
   }
 
   textarea {
     width: 90% !important;
   }
-  
 }
 
 .social-footer ul {
@@ -668,11 +664,10 @@ footer {
 .griditem2 {
   width: 327px;
   height: 316px;
-  margin-bottom: 24px;
+  margin: 12px 12px 24px 12px;
   border: 1px solid #c1c7d0;
   border-radius: 5%;
   background-color: #ebf0ee;
-  margin: 12px;
 }
 
 .minimenu2 {
@@ -747,10 +742,5 @@ textarea::-webkit-resizer {
 }
 
 .spacer {
-  padding-right: 20%
+  padding-right: 20%;
 }
-
-form {
-  flex-direction: column;
-}
-
