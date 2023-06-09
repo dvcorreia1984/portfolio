@@ -477,6 +477,7 @@ button {
   .social ul {
     justify-content: center;
     align-items: flex-end;
+    padding: 0 22%;
   }
 
   .social ul li {
@@ -496,7 +497,7 @@ button {
     height: 22px;
   }
 
-  .social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1){
+  .social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
     height: 24px;
   }
 
@@ -602,10 +603,6 @@ button {
 
   #bottomline {
     display: none;
-  }
-
-  .social ul {
-    padding: 0 22%;
   }
 
   form {
