@@ -502,16 +502,45 @@ button {
     display: none;
   }
 
-  .about {
-    display: none;
-  }
-
-  figure {
+  #Aboutbgimage {
+    background-image: url(./Assets/Desktop/Figma\ design\ template.png);
+    background-repeat: no-repeat;;
     padding-top: 12px;
     background-color: violet;
     border: 3px solid red;
+    height: 28vh;
+    background-size: 100%;
   }
-  
+
+  #Aboutimage {
+    background-image: url(./Assets/Desktop/aboutmedesktop1.svg);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 50% 50%;
+    height: 20vh;
+  }
+
+  .about {
+    background-image: url(./Assets/Desktop/aboutmedesktop1.svg), url(./Assets/Desktop/illustration-about-me-2-desktop.svg) !important;
+    background-repeat: no-repeat;
+    background-position: 100% 31%, 0% 49% !important;
+    padding-top: 5% 8% !important;
+  }
+
+  h4#h1p3 {
+    font-size: xxx-large;
+  }
+
+  #pp3 {
+    padding: 2% 0 0 0 !important;
+    font-size: 144%;
+    width: 100%;
+  }
+
+
+
+
+
 }
 
 .social-footer ul {
