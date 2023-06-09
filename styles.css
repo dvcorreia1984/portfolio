@@ -525,6 +525,7 @@ button {
     background-repeat: no-repeat;
     background-position: 100% 31%, 0% 49% !important;
     padding-top: 5% 8% !important;
+    background-size: 16%;
   }
 
   h4#h1p3 {
@@ -532,15 +533,21 @@ button {
   }
 
   #pp3 {
-    padding: 2% 0 0 0 !important;
-    font-size: 144%;
-    width: 100%;
+    padding: 2% 20% !important;
+    font-size: 80%;
+    line-height: 24px;    
   }
 
+  button#aboutbutton {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
 
-
-
-
+  .new-line::after {
+    content: '\a';
+    white-space: pre;
+  }
+  
 }
 
 .social-footer ul {
