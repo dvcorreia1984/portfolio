@@ -687,10 +687,10 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   display: flex;
   flex: none;
   font-weight: 600;
-  font-size: 158%;
+  font-size: 144%;
   align-content: center;
   width: 327px;
-  margin: 0 0 68px 43px;
+  margin: 0 0 124px 43px;
   text-align: justify;
 }
 
