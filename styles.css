@@ -501,17 +501,7 @@ button {
   .action {
     display: none;
   }
-
-  #Aboutbgimage {
-    background-image: url(./Assets/Desktop/Figma\ design\ template.png);
-    background-repeat: no-repeat;;
-    padding-top: 12px;
-    background-color: violet;
-    border: 3px solid red;
-    height: 28vh;
-    background-size: 100%;
-  }
-
+ 
   #Aboutimage {
     background-image: url(./Assets/Desktop/aboutmedesktop1.svg);
     background-repeat: no-repeat;
@@ -650,8 +640,9 @@ footer {
 
 .grid-container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -662,6 +653,7 @@ footer {
   border: 1px solid #c1c7d0;
   border-radius: 5%;
   background-color: #ebf0ee;
+  margin: 12px;
 }
 
 .minimenu2 {
