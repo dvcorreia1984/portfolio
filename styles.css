@@ -540,10 +540,20 @@ button {
 
   .wrapper {
     flex-direction: row !important;
+    align-items: flex-end;
+    justify-content: center;
   }
 
   .email {
     display: none;
+  }
+
+  input {
+    width: 90% !important ;
+  }
+
+  textarea {
+    width: 90% !important;
   }
   
 }
@@ -741,7 +751,6 @@ textarea::-webkit-resizer {
 }
 
 form {
-  display: flex;
   flex-direction: column;
 }
 
