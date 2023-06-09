@@ -570,7 +570,7 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 381px;
+  width: 100%;
 }
 
 footer {
