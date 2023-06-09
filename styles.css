@@ -414,7 +414,6 @@ button {
   .topbar {
     justify-content: flex-start !important;
   }
-
 }
 
 @media screen and (min-width: 375px) {
