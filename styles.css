@@ -12,6 +12,10 @@ body {
   color: #172b4d;
 }
 
+a {
+  text-decoration: none;
+}
+
 section#page1 {
   padding-bottom: 10%;
 }
@@ -464,10 +468,40 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0;
-    font-size: 207%;
+    font-size: 260%;
     line-height: 60px;
     letter-spacing: 0.37px;
     padding: 15% 15% 0 15%;
+  }
+
+  .social ul {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .social ul li {
+    padding: 2%;
+  }
+
+  .social > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
+    height: 24px;
+  }
+
+  .social > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
+    height: 24px;
+  }
+
+  .social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
+    padding-top: 9%;
+    height: 22px;
+  }
+
+  .social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1){
+    height: 24px;
+  }
+
+  .social > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
+    height: 25px;
   }
 
   .pg1content {
@@ -539,7 +573,7 @@ button {
 
   #pp3 {
     padding: 2% 20% !important;
-    font-size: 80%;
+    font-size: 100%;
     line-height: 24px;
   }
 
@@ -603,7 +637,7 @@ button {
 
   .social-footer2 ul {
     width: 23%;
-    margin: 0 40%;
+    margin: 0 38%;
   }
 
   .wrapper.footer {
@@ -656,10 +690,10 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   display: flex;
   flex: none;
   font-weight: 600;
-  font-size: 3vh;
+  font-size: 158%;
   align-content: center;
   width: 327px;
-  margin: 54px 30px 54px 24px;
+  margin: 0 0 68px 43px;
   text-align: justify;
 }
 
