@@ -537,6 +537,14 @@ button {
     content: '\a';
     white-space: pre;
   }
+
+  .wrapper {
+    flex-direction: row !important;
+  }
+
+  .email {
+    display: none;
+  }
   
 }
 
@@ -569,8 +577,9 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 footer {
@@ -731,4 +740,8 @@ textarea::-webkit-resizer {
   padding-right: 20%
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
 
