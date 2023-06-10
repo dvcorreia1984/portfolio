@@ -420,11 +420,6 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  /*.new-line::after {
-    content: '\a';
-    white-space: pre;
-  }*/
-
   .topbar {
     justify-content: flex-start !important;
   }
