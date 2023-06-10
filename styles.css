@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  background-image: url(./Assets/Desktop/FigmaTembplate.svg);
   font-family: "Roboto", sans-serif;
   color: #172b4d;
 }
@@ -145,7 +146,7 @@ i.fa.fa-bars {
 }
 
 .social {
-  padding: 3%;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
 }
@@ -360,6 +361,7 @@ button {
   text-align: center;
   font-size: 20px;
   padding: 5%;
+  white-space: pre-line;
 }
 
 #pgbut {
@@ -409,11 +411,19 @@ button {
   margin-top: 15px;
 }
 
+.new-line {
+  display: none;
+}
+
+.dbr {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
-  .new-line::after {
+  /*.new-line::after {
     content: '\a';
     white-space: pre;
-  }
+  }*/
 
   .topbar {
     justify-content: flex-start !important;
@@ -467,9 +477,9 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
-    font-size: 260%;
-    line-height: 60px;
+    margin: 0.5vw;
+    font-size: 4vw;
+    line-height: 4.5vw;
     letter-spacing: 0.37px;
     padding: 15% 15% 0 15%;
   }
@@ -481,37 +491,38 @@ button {
   }
 
   .social ul li {
-    padding: 2%;
+    padding: 0.3vw;
   }
 
   .social > ul:nth-child(1) > li:nth-child(1) > a:nth-child(1) > img:nth-child(1) {
-    height: 24px;
+    height: 2vw;
   }
 
   .social > ul:nth-child(1) > li:nth-child(2) > a:nth-child(1) > img:nth-child(1) {
-    height: 24px;
+    height: 2vw;
   }
 
   .social > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1) > img:nth-child(1) {
     padding-top: 9%;
-    height: 22px;
+    height: 1.9vw;
   }
 
   .social > ul:nth-child(1) > li:nth-child(4) > a:nth-child(1) > img:nth-child(1) {
-    height: 24px;
+    height: 2vw;
   }
 
   .social > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1) > img:nth-child(1) {
-    height: 25px;
+    height: 2.1vw;
   }
 
   .pg1content {
+    white-space: nowrap;
     display: flex;
-    padding: 0 20%;
-    height: 96px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 32px;
+    flex-direction: column;
+    padding: 0 20vw;
+    font-size: 1.48vw;
+    line-height: 2vw;
+    font-weight: 400;
   }
 
   /* Change the color of links on hover */
@@ -563,24 +574,27 @@ button {
   .about {
     background-image: url(./Assets/Desktop/aboutmedesktop1.svg), url(./Assets/Desktop/illustration-about-me-2-desktop.svg) !important;
     background-repeat: no-repeat;
-    background-position: 100% 31%, 0% 49% !important;
+    background-position: 100% 31%, 0% 76% !important;
     padding-top: 5% 8% !important;
-    background-size: 16%;
+    background-size: 15vw;
   }
 
   h4#h1p3 {
-    font-size: xxx-large;
+    padding-bottom: 1vw;
+    font-size: 4vw;
   }
 
   #pp3 {
-    padding: 2% 20% !important;
-    font-size: 100%;
-    line-height: 24px;
-  }
+    padding: 0 15% !important;
+    font-size: 1.7vw;
+    line-height: 2vw;
+    white-space: nowrap;
+    margin: 3px 4px;
+}
 
   button#aboutbutton {
-    margin-top: 0;
-    margin-bottom: 12px;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
   }
 
   .wrapper {
@@ -640,7 +654,27 @@ button {
   .wrapper.footer {
     background-image: none !important;
   }
-}
+
+  .new-line {
+    display: inline;
+  }
+
+  .dbr {
+    display: contents;
+  }
+
+  #footertext {
+    display: flex;
+    flex: none;
+    font-weight: 600;
+    font-size: 2.3vw !important;
+    align-content: center;
+    width: 33vw;
+    margin: 0 0 14vw 15vw;
+    text-align: justify;
+  }
+
+  }
 
 .social-footer ul {
   display: flex;
@@ -684,14 +718,9 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
 }
 
 #footertext {
-  display: flex;
-  flex: none;
+  font-size: 7vw;
+  text-align: center;
   font-weight: 600;
-  font-size: 144%;
-  align-content: center;
-  width: 327px;
-  margin: 0 0 124px 43px;
-  text-align: justify;
 }
 
 .form-container {
@@ -788,10 +817,10 @@ input {
   color: #6b778c;
   font-weight: 400;
   font-style: italic;
-  margin-top: 24px;
+  margin-top: 2vw;
   background: white;
   width: 327px;
-  height: 48px;
+  height: 4vw;
   border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
@@ -802,14 +831,14 @@ input:hover {
 }
 
 textarea {
-  padding-left: 16px;
+  font-family: 'Roboto';
+  padding-left: 1.5vw;
   color: #42526e;
   font-weight: 400;
-  margin-top: 24px;
+  margin-top: 2vw;
   width: 327px;
-  height: 90px;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1.3vw;
+  line-height: 3vw;
   border: 1px solid #60c095;
   border-radius: 4px;
   background-image: url(./Assets/Union.svg);
