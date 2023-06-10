@@ -585,7 +585,7 @@ button {
     line-height: 2vw;
     white-space: nowrap;
     margin: 3px 4px;
-}
+  }
 
   button#aboutbutton {
     margin-top: 2vw;
@@ -668,8 +668,7 @@ button {
     margin: 0 0 14vw 15vw;
     text-align: justify;
   }
-
-  }
+}
 
 .social-footer ul {
   display: flex;
@@ -826,7 +825,6 @@ input:hover {
 }
 
 textarea {
-  font-family: 'Roboto';
   padding-left: 1.5vw;
   color: #42526e;
   font-weight: 400;
