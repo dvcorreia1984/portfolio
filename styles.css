@@ -658,7 +658,7 @@ button {
     display: contents;
   }
 
-  #footertext  {
+  #footertext {
     display: flex;
     flex: none;
     font-weight: 600;
@@ -679,7 +679,7 @@ button {
 }
 
 .form ul {
-  list-style-type: none;
+  list-style-type: n one;
 }
 
 div.griditem:nth-child(11) > ul:nth-child(3) {
