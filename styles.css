@@ -658,7 +658,7 @@ button {
     display: contents;
   }
 
-  #footertext {
+  #footertext  {
     display: flex;
     flex: none;
     font-weight: 600;
