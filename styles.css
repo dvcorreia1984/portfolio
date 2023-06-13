@@ -667,6 +667,7 @@ button {
     width: 33vw;
     margin: 0 0 14vw 15vw;
     text-align: justify;
+    padding: 0 !important;
   }
 }
 
@@ -678,7 +679,7 @@ button {
 }
 
 .form ul {
-  list-style-type: none;
+  list-style-type: n one;
 }
 
 div.griditem:nth-child(11) > ul:nth-child(3) {
@@ -715,6 +716,7 @@ div.griditem:nth-child(10) > div:nth-child(1) > ul:nth-child(3) {
   font-size: 7vw;
   text-align: center;
   font-weight: 600;
+  padding: 7vh 6vh;
 }
 
 .form-container {
