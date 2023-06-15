@@ -71,7 +71,7 @@
 <img src="./Assets/Readme/Live%20demo.png" alt="Live demo">
 
 [Live Demo] (https://dvcorreia1984.github.io/portfolio/)
-[Presentation] ([Live Demo] ([https://dvcorreia1984.github.io/portfolio/](https://www.loom.com/share/1b41d93c4b124152be232ac2bc8efaf2?sid=497e4f91-2da6-457c-94d4-5278c283da8b)))
+[Presentation] ([https://dvcorreia1984.github.io/portfolio/](https://www.loom.com/share/1b41d93c4b124152be232ac2bc8efaf2?sid=497e4f91-2da6-457c-94d4-5278c283da8b)))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
