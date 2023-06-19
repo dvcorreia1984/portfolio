@@ -93,10 +93,19 @@ h6 {
 i.fa.fa-bars {
   width: 24px;
   height: 24px;
-  padding: 8px;
+  padding: 6px;
   font-size: 24px;
   bottom: 20px;
 }
+
+i.fa.fa-bars:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3a4a42;
+  border-radius: 10px;
+}
+
+
 
 /* Background image */
 
@@ -864,19 +873,21 @@ textarea::-webkit-resizer {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  color: #3a4a42;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 7vw;
+  font-weight: 600;
+  color: #3a4a42;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #36b37f;
 }
 
 .sidenav .closebtn {
@@ -891,3 +902,4 @@ textarea::-webkit-resizer {
   transition: margin-left .5s;
   padding: 16px;
 }
+
