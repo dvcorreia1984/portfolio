@@ -84,18 +84,6 @@ h6 {
   justify-content: center;
 }
 
-#contact {
-  display: none;
-}
-
-#about {
-  display: none;
-}
-
-#portfolio {
-  display: none;
-}
-
 .menu {
   width: 40px;
   height: 40px;
@@ -105,9 +93,16 @@ h6 {
 i.fa.fa-bars {
   width: 24px;
   height: 24px;
-  padding: 8px;
+  padding: 6px;
   font-size: 24px;
   bottom: 20px;
+}
+
+i.fa.fa-bars:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3a4a42;
+  border-radius: 10px;
 }
 
 /* Background image */
@@ -669,6 +664,11 @@ button {
     text-align: justify;
     padding: 0 !important;
   }
+
+  /* Mobile Menu */
+  .mobile-menu {
+    display: flex !important;
+  }
 }
 
 .social-footer ul {
@@ -854,4 +854,69 @@ textarea::-webkit-resizer {
 
 .spacer {
   padding-right: 20%;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+/* Sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #3a4a42;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 7vw;
+  font-weight: 600;
+  color: #3a4a42;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #36b37f;
+}
+
+.sidenav .closebtn {
+  padding-top: 16px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+ul.ul-sidenav {
+  padding-left: 0;
+  list-style-type: none;
+  background-color: white;
+}
+
+.whitespace-sidenav {
+  background-color: white;
+  height: 65vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 25px;
+}
+
+div#sidenav-line {
+  margin: 0 30%;
+  border-bottom: 5px solid black;
+  border-radius: 10px;
 }
