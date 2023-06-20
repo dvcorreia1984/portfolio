@@ -105,8 +105,6 @@ i.fa.fa-bars:hover {
   border-radius: 10px;
 }
 
-
-
 /* Background image */
 
 .container {
@@ -420,8 +418,6 @@ button {
   .topbar {
     justify-content: flex-start !important;
   }
-
-
 }
 
 @media screen and (min-width: 375px) {
@@ -673,7 +669,6 @@ button {
   .mobile-menu {
     display: flex !important;
   }
-
 }
 
 .social-footer ul {
@@ -902,7 +897,7 @@ textarea::-webkit-resizer {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 0.5s;
   padding: 16px;
 }
 
@@ -921,8 +916,7 @@ ul.ul-sidenav {
 }
 
 div#sidenav-line {
-  margin: 0px 30%;
+  margin: 0 30%;
   border-bottom: 5px solid black;
   border-radius: 10px;
 }
-
