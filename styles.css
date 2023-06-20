@@ -669,6 +669,11 @@ button {
     padding: 0 !important;
   }
 
+  /* Mobile Menu */
+  .mobile-menu {
+    display: flex !important;
+  }
+
 }
 
 .social-footer ul {
@@ -858,7 +863,7 @@ textarea::-webkit-resizer {
 
 /* Mobile Menu */
 .mobile-menu {
-  display: flex;
+  display: none;
 }
 
 /* Sidenav */
@@ -869,10 +874,9 @@ textarea::-webkit-resizer {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: white;
+  background-color: #e5e5e5;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
   color: #3a4a42;
 }
 
@@ -891,15 +895,34 @@ textarea::-webkit-resizer {
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  padding-top: 16px;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 #main {
   transition: margin-left .5s;
   padding: 16px;
+}
+
+ul.ul-sidenav {
+  padding-left: 0;
+  list-style-type: none;
+  background-color: white;
+}
+
+.whitespace-sidenav {
+  background-color: white;
+  height: 67vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 25px;
+}
+
+div#sidenav-line {
+  margin: 0px 30%;
+  border-bottom: 5px solid black;
+  border-radius: 10px;
 }
 
