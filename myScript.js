@@ -15,7 +15,7 @@ const projects = [
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    image: './Assets/Popup/Snapshoot.png',
+    image: 'https://imgtr.ee/images/2023/06/21/mot4U.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
     sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
@@ -77,10 +77,12 @@ function openPopup(project) {
   //Add project image
   const projectImage = popup.document.createElement('img');
   projectImage.classList.add('popup-image');
-  projectImage.src = projects.image;
+  projectImage.src = project.image;
+  projectImage.style.display = 'flex';
+  projectImage.style.alignItems = 'center';
+  projectImage.style.width = '19.4375rem';
+  projectImage.style.height = '13.75rem';
   popupContainer.appendChild(projectImage);
-
-  
 
   const projectName = popup.document.createElement('h1');
   projectName.textContent = project.name;
@@ -95,6 +97,8 @@ function openPopup(project) {
     projectTechnologies.appendChild(technology);
   });
   popupContainer.appendChild(projectTechnologies);
+
+  
 
   const projectDescription = popup.document.createElement('p');
   projectDescription.textContent = project.description;
@@ -138,9 +142,3 @@ function openPopup(project) {
   popup.document.body.appendChild(popupContainer);
   
 }
-
-
-
-
-
-
