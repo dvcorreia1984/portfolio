@@ -13,54 +13,13 @@ function closeNav() {
 // Create Array to store project details
 const projects = [
   {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
+    name: 'Keeping track of hundreds of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     image: './Assets/Popup/Snapshoot.png',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
+    sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
   },
-  {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
-    image: './Assets/Popup/Snapshoot Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-  },
-  {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
-    image: './Assets/Popup/Snapshoot Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-  },
-  {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
-    image: './Assets/Popup/Snapshoot Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-  },
-  {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
-    image: './Assets/Popup/Snapshoot Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-  },
-  {
-    name: 'Mobile first Javascript project',
-    description: 'Microverse pair programming project',
-    image: './Assets/Popup/Snapshoot Portfolio.svg',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    liveVersion: 'https://example.com/project1',
-    sourceLink: 'https://github.com/user/project1',
-  },
-  
 ];
 
 // Link to HTML document
@@ -106,6 +65,7 @@ projects.forEach((project) => {
 function openPopup(project) {
   const popup = window.open('', 'Popup', 'width=375','height=882',);
   popup.document.body.style.backgroundColor = '#c1c7d0';
+  popup.document.body.style.fontFamily = 'Roboto, sans-serif';
   popup.resizeTo(375, 882);
 
   const popupContainer = popup.document.createElement('div');
@@ -116,38 +76,63 @@ function openPopup(project) {
 
   //Add project image
   const projectImage = popup.document.createElement('img');
-  projectImage.src = project.image;
-  projectImage.style.width = '100%';
-  projectImage.style.borderRadius = '10px';
+  projectImage.classList.add('popup-image');
+  projectImage.src = projects.image;
   popupContainer.appendChild(projectImage);
+
+  
 
   const projectName = popup.document.createElement('h1');
   projectName.textContent = project.name;
   popupContainer.appendChild(projectName);
 
-  const projectDescription = popup.document.createElement('p');
-  projectDescription.textContent = project.description;
-  popupContainer.appendChild(projectDescription);
-
   const projectTechnologies = popup.document.createElement('ul');
   project.technologies.forEach((tech) => {
     const technology = popup.document.createElement('li');
+    technology.style.listStyleType = 'none';
+    technology.classList.add('button2');
     technology.textContent = tech;
     projectTechnologies.appendChild(technology);
   });
   popupContainer.appendChild(projectTechnologies);
 
-  const liveVersionLink = popup.document.createElement('a');
-  liveVersionLink.href = project.liveVersion;
-  liveVersionLink.target = '_blank';
-  liveVersionLink.textContent = 'Live Version';
-  popupContainer.appendChild(liveVersionLink);
+  const projectDescription = popup.document.createElement('p');
+  projectDescription.textContent = project.description;
+  popupContainer.appendChild(projectDescription);
 
-  const sourceLink = popup.document.createElement('a');
-  sourceLink.href = project.sourceLink;
-  sourceLink.target = '_blank';
-  sourceLink.textContent = 'Source Link';
-  popupContainer.appendChild(sourceLink);
+  const liveVersionButton = popup.document.createElement('button');
+  liveVersionButton.textContent = 'See live';
+  liveVersionButton.classList.add('button');
+  liveVersionButton.style.display = 'flex';
+  liveVersionButton.style.alignItems = 'flex-start';
+  liveVersionButton.style.backgroundColor = '#36b37f';
+  liveVersionButton.style.fontSize = '1.0625rem';
+  liveVersionButton.style.color = '#fff';
+  liveVersionButton.style.fontWeight = '500';
+  liveVersionButton.style.lineHeight = '1.5rem';
+  liveVersionButton.style.letterSpacing = '0.03188rem';
+  liveVersionButton.style.borderRadius = '4px';
+  liveVersionButton.style.padding = '0.75rem 1rem';
+  liveVersionButton.style.border = '1px solid #36b37f';
+  liveVersionButton.addEventListener('click', () => window.open(project.liveVersion, '_blank'));
+  popupContainer.appendChild(liveVersionButton);
+  
+  const sourceButton = popup.document.createElement('button');
+  sourceButton.textContent = 'Source Link';
+  sourceButton.classList.add('button');
+  sourceButton.style.display = 'flex';
+  sourceButton.style.alignItems = 'flex-start';
+  sourceButton.style.backgroundColor = '#36b37f';
+  sourceButton.style.fontSize = '1.0625rem';
+  sourceButton.style.color = '#fff';
+  sourceButton.style.fontWeight = '500';
+  sourceButton.style.lineHeight = '1.5rem';
+  sourceButton.style.letterSpacing = '0.03188rem';
+  sourceButton.style.borderRadius = '4px';
+  sourceButton.style.padding = '0.75rem 1rem';
+  sourceButton.style.border = '1px solid #36b37f';
+  sourceButton.addEventListener('click', () => window.open(project.sourceLink, '_blank'));
+  popupContainer.appendChild(sourceButton);
 
   popup.document.body.innerHTML = '';
   popup.document.body.appendChild(popupContainer);

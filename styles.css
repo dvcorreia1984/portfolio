@@ -920,3 +920,26 @@ div#sidenav-line {
   border-bottom: 5px solid black;
   border-radius: 10px;
 }
+
+.popup-image {
+  position: fixed;
+  background-color: red;
+  width: 20%;
+  height: 20%;
+}
+
+.popup-technologies {
+  list-style-type: none;
+}
+
+a.button {
+  color: white;
+  background-color: #36b37e;
+  border: none;
+  border-radius: 5%;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
