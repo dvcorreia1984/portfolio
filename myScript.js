@@ -70,7 +70,7 @@ function openPopup(project) {
 
   const popupContainer = popup.document.createElement('div');
   popupContainer.classList.add('.popup-container');
-  popupContainer.style.padding = '30px';
+  popupContainer.style.padding = '15px';
   popupContainer.style.backgroundColor = '#fff';
   popupContainer.style.borderRadius = '10px';
 
@@ -80,8 +80,8 @@ function openPopup(project) {
   projectImage.src = project.image;
   projectImage.style.display = 'flex';
   projectImage.style.alignItems = 'center';
-  projectImage.style.width = '19.4375rem';
-  projectImage.style.height = '13.75rem';
+  projectImage.style.width = '83vw';
+  projectImage.style.height = '25vh';
   popupContainer.appendChild(projectImage);
 
   const projectName = popup.document.createElement('h1');
@@ -89,25 +89,48 @@ function openPopup(project) {
   popupContainer.appendChild(projectName);
 
   const projectTechnologies = popup.document.createElement('ul');
+  projectTechnologies.style.display = 'flex';
+  projectTechnologies.style.paddingLeft = '0';
+  
   project.technologies.forEach((tech) => {
     const technology = popup.document.createElement('li');
+    technology.style.display = 'flex';
+    technology.style.alignItems = 'center';
     technology.style.listStyleType = 'none';
-    technology.classList.add('button2');
+    technology.style.color = '#3a4a42';
+    technology.style.fontSize = '0.75rem';
+    technology.style.fontWeight = '600';
+    technology.style.lineHeight = '1rem';
+    technology.style.letterSpacing = '0.0225rem';
+    technology.style.backgroundColor = '#ebF0ee';
+    technology.style.padding = '0.5rem 0.75rem';
+    technology.style.borderRadius = '4px';
+    technology.style.marginRight = '0.5rem';
     technology.textContent = tech;
     projectTechnologies.appendChild(technology);
   });
   popupContainer.appendChild(projectTechnologies);
 
-  
-
   const projectDescription = popup.document.createElement('p');
   projectDescription.textContent = project.description;
+  projectDescription.style.fontSize = '1rem';
+  projectDescription.style.lineHeight = '1.5rem';
+  projectDescription.style.color = '#344563';
   popupContainer.appendChild(projectDescription);
+
+  const projectDescription2 = popup.document.createElement('p');
+  projectDescription2.textContent = project.description;
+  projectDescription2.style.fontSize = '1rem';
+  projectDescription2.style.lineHeight = '1.5rem';
+  projectDescription2.style.color = '#344563';
+  popupContainer.appendChild(projectDescription2);
 
   const liveVersionButton = popup.document.createElement('button');
   liveVersionButton.innerHTML =`<div class="popup-button" href="${project.liveVersion}" target="_blank">See live</div>&nbsp;&nbsp;<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikljb25zL0ljb24gLSBFeHBvcnQiPgo8cGF0aCBpZD0ic2VlIGxpdmUgaWNvbiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01IDEyQzUgOC4xMzQwMSA4LjEzNDAxIDUgMTIgNUMxMi41NTIzIDUgMTMgNC41NTIyOCAxMyA0QzEzIDMuNDQ3NzIgMTIuNTUyMyAzIDEyIDNDNy4wMjk0NCAzIDMgNy4wMjk0NCAzIDEyQzMgMTYuOTcwNiA3LjAyOTQ0IDIxIDEyIDIxQzE2Ljk3MDYgMjEgMjEgMTYuOTcwNiAyMSAxMkMyMSAxMS40NDc3IDIwLjU1MjMgMTEgMjAgMTFDMTkuNDQ3NyAxMSAxOSAxMS40NDc3IDE5IDEyQzE5IDE1Ljg2NiAxNS44NjYgMTkgMTIgMTlDOC4xMzQwMSAxOSA1IDE1Ljg2NiA1IDEyWk0xNiAzQzE1LjQ0NzcgMyAxNSAzLjQ0NzcyIDE1IDRDMTUgNC41NTIyOCAxNS40NDc3IDUgMTYgNUgxNy41ODU4TDExLjI5MjkgMTEuMjkyOUMxMC45MDI0IDExLjY4MzQgMTAuOTAyNCAxMi4zMTY2IDExLjI5MjkgMTIuNzA3MUMxMS42ODM0IDEzLjA5NzYgMTIuMzE2NiAxMy4wOTc2IDEyLjcwNzEgMTIuNzA3MUwxOSA2LjQxNDIxVjhDMTkgOC41NTIyOCAxOS40NDc3IDkgMjAgOUMyMC41NTIzIDkgMjEgOC41NTIyOCAyMSA4VjRDMjEgMy40NDc3MiAyMC41NTIzIDMgMjAgM0gxNloiIGZpbGw9IndoaXRlIi8+CjwvZz4KPC9zdmc+Cg==" alt="" />`;
   liveVersionButton.classList.add('button');
   liveVersionButton.style.display = 'flex';
+  liveVersionButton.style.float = 'left';
+  liveVersionButton.style.marginRight = '0.5rem';
   liveVersionButton.style.alignItems = 'flex-start';
   liveVersionButton.style.backgroundColor = '#36b37f';
   liveVersionButton.style.fontSize = '1.0625rem';
