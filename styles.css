@@ -948,3 +948,9 @@ a.popup-button {
   color: white;
   text-decoration: none;
 }
+
+.desktop-container {
+  color: red;
+  width: 57.5rem;
+  height: 67.6875rem;
+}
