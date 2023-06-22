@@ -943,3 +943,9 @@ a.button {
   font-size: 12px;
   font-weight: bold;
 }
+
+a.popup-button {
+  color: white;
+  text-decoration: none;
+}
+
