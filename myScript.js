@@ -1,11 +1,9 @@
-// eslint-disable-next-line no-unused-vars
-const openNav = function openNav() {
-  document.getElementById('mySidenav').style.width = '100vw';
-  document.getElementById('main').style.marginLeft = '250px';
-};
+function openNav() {
+    const mySidenav = document.getElementById("mySidenav");
+    mySidenav.style.width = "100vw";
+}
 
-// eslint-disable-next-line no-unused-vars
-const closeNav = function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
-};
+function closeNav() {
+    const mySidenav = document.getElementById("mySidenav");
+    mySidenav.style.width = "0";
+}
