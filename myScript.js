@@ -20,8 +20,8 @@ const projects = [
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
     sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
-    liveVersionLogo: './Assets/',
-    sourceCodeLogo: '',
+    liveVersionLogo: 'Assets\Popup\live.svg',
+    sourceCodeLogo: 'Assets\Popup\source.svg',
   },
 ];
 
@@ -103,7 +103,7 @@ liveVersion.setAttribute("class", "button");
 liveVersion.textContent = "Live Version";
 //Add image to live version button
 const liveVersionImage = document.createElement("img");
-liveVersionImage.setAttribute("src", "#");
+liveVersionImage.setAttribute("src", "./Assets/Popup/live.svg");
 liveVersionImage.setAttribute("class", "button-image");
 liveVersion.appendChild(liveVersionImage);
 
@@ -117,7 +117,7 @@ sourceCode.setAttribute("class", "button");
 sourceCode.textContent = "Source Code";
 //Add image to source code button
 const sourceCodeImage = document.createElement("img");
-sourceCodeImage.setAttribute("src", "#");
+sourceCodeImage.setAttribute("src", "./Assets/Popup/source.svg");
 sourceCodeImage.setAttribute("class", "button-image");
 sourceCode.appendChild(sourceCodeImage);
 modalButtons.appendChild(sourceCode);
