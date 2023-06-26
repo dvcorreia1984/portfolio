@@ -130,6 +130,11 @@ Open index.html using live server extension
 - Twitter: [@twitterhandle](https://twitter.com/mryeminthu)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ye-min-thu-76456a214/)
 
+👤 **Muhammad Bilal Liaquat**
+
+- GitHub: [@githubhandle](https://github.com/BilalLiaquat7)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-bilal-liaquat-87863390/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

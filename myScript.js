@@ -1,11 +1,15 @@
-// eslint-disable-next-line no-unused-vars
+const menuButton = document.getElementById('menu');
+const mySidenav = document.getElementById('mySidenav');
+
 function openNav() {
-  document.getElementById('mySidenav').style.width = '100vw';
-  document.getElementById('main').style.marginLeft = '250px';
+  const mySidenav = document.getElementById('mySidenav');
+  mySidenav.style.width = '100vw';
 }
 
-// eslint-disable-next-line no-unused-vars
 function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
+  const mySidenav = document.getElementById('mySidenav');
+  mySidenav.style.width = '0';
 }
+
+menuButton.addEventListener('click', openNav);
+mySidenav.addEventListener('click', closeNav);

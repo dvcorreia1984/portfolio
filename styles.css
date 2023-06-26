@@ -890,6 +890,8 @@ textarea::-webkit-resizer {
 }
 
 .sidenav .closebtn {
+  color: #93a79d;
+  font-weight: 100;
   padding-top: 16px;
   margin-right: 24px;
   display: flex;
