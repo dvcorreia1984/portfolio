@@ -15,7 +15,7 @@ const projects = [
   {
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
-    image: 'https://imgtr.ee/images/2023/06/21/mot4U.png',
+    image: 'Assets\Popup\popup-mobile.png',
     image2: 'https://imgtr.ee/images/2023/06/22/mwCbr.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
@@ -74,6 +74,11 @@ overlay.classList.remove("hidden")
 //Modal
 const modal = document.querySelector(".modal");
 
+//Add project background image
+const modalImage = document.createElement("img");
+modalImage.setAttribute("src", project.image);
+modalImage.setAttribute("class", "modal-image");
+modal.appendChild(modalImage);
 
 const modalText = document.createElement("h3");
 modalText.setAttribute("id", "modal-title");
