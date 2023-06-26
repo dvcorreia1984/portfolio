@@ -960,26 +960,21 @@ a.popup-button {
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.4rem;
-  width: 42vw;
-  height: 18vw;
   padding: 1.3rem;
   min-height: 250px;
   position: absolute;
-  transform: translate(-50%, -50%));
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 15px;
   z-index: 2;
-  background-position-x: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin: 26vw;
 }
 
 .modal .flex {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .modal p {
@@ -1016,3 +1011,4 @@ a.popup-button {
 .hidden {
   display: none;
 }
+

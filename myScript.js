@@ -20,6 +20,8 @@ const projects = [
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
     sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
+    liveVersionLogo: './Assets/',
+    sourceCodeLogo: '',
   },
 ];
 
@@ -71,6 +73,57 @@ overlay.classList.remove("hidden")
 
 //Modal
 const modal = document.querySelector(".modal");
+
+
+const modalText = document.createElement("h3");
+modalText.setAttribute("id", "modal-title");
+modalText.textContent = project.name;
+modal.appendChild(modalText);
+
+//Add project description
+const modalDescription = document.createElement("p");
+modalDescription.setAttribute("id", "modal-description");
+modalDescription.textContent = project.description;
+modal.appendChild(modalDescription);
+
+const modalDescription2 = document.createElement("p");
+modalDescription2.setAttribute("id", "modal-description");
+modalDescription2.textContent = project.description;
+modal.appendChild(modalDescription2);
+
+//Add div with class "modal-buttons"
+const modalButtons = document.createElement("div");
+modalButtons.setAttribute("class", "modal-buttons");
+//Add button to open live version
+const liveVersion = document.createElement("a");
+liveVersion.setAttribute("href", project.liveVersion);
+liveVersion.setAttribute("target", "_blank");
+liveVersion.setAttribute("class", "button");
+
+liveVersion.textContent = "Live Version";
+//Add image to live version button
+const liveVersionImage = document.createElement("img");
+liveVersionImage.setAttribute("src", "#");
+liveVersionImage.setAttribute("class", "button-image");
+liveVersion.appendChild(liveVersionImage);
+
+modalButtons.appendChild(liveVersion);
+
+//Add button to open source code
+const sourceCode = document.createElement("a");
+sourceCode.setAttribute("href", project.sourceLink);
+sourceCode.setAttribute("target", "_blank");
+sourceCode.setAttribute("class", "button");
+sourceCode.textContent = "Source Code";
+//Add image to source code button
+const sourceCodeImage = document.createElement("img");
+sourceCodeImage.setAttribute("src", "#");
+sourceCodeImage.setAttribute("class", "button-image");
+sourceCode.appendChild(sourceCodeImage);
+modalButtons.appendChild(sourceCode);
+
+modal.appendChild(modalButtons);
+
 modal.classList.remove("hidden");
 
 //Buttons
