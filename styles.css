@@ -1169,3 +1169,7 @@ button#close-btn-desktop:hover {
   color: #3a4a42;
   cursor: pointer;
 }
+
+button#close-btn-desktop:active {
+  background-color: #008552;
+}
