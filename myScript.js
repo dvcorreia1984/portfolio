@@ -106,7 +106,7 @@ function openPopup(project) {
 
   // Add project background image depending on screen size
   let imageSrc;
-  if (window.innerWidth < 768) {
+  if (window.innerWidth <= 768) {
     imageSrc = project.image;
   } else { // Add close button above desktop image
     imageSrc = project.image2;
@@ -150,14 +150,14 @@ function openPopup(project) {
   });
 
   // Heading
-  if (window.innerWidth < 768) {
+  const modalTitleHolder = document.createElement('div');
+  if (window.innerWidth <= 768) {
     const modalText = document.createElement('h3');
     modalText.setAttribute('id', 'modal-title');
     modalText.textContent = project.name;
     modal.appendChild(modalText);
   } else {
     // create div with class "modal-title-holder"
-    const modalTitleHolder = document.createElement('div');
     modalTitleHolder.setAttribute('id', 'modal-title-holder');
     const modalText = document.createElement('h3');
     modalText.setAttribute('id', 'modal-title');
@@ -166,7 +166,7 @@ function openPopup(project) {
     modal.appendChild(modalTitleHolder);
   }
 
-  if (window.innerWidth < 768) {
+  if (window.innerWidth <= 768) {
     // Add technologies used for mobile version
     const modalTechnologies = document.createElement('ul');
     modalTechnologies.setAttribute('id', 'modal-technologies');
@@ -188,7 +188,7 @@ function openPopup(project) {
   }
 
   // Add project description
-  if (window.innerWidth < 768) {
+  if (window.innerWidth <= 768) {
     // Add project description twice for mobile
     const modalDescription = document.createElement('p');
     modalDescription.setAttribute('id', 'modal-description');
@@ -251,11 +251,11 @@ function openPopup(project) {
   sourceCode.appendChild(sourceCodeImage);
 
   modalButtons2.appendChild(sourceCode);
-  modalButtonHolder.appendChild(modalButtons);
-  modalButtonHolder.appendChild(modalButtons2);
+  modalTitleHolder.appendChild(modalButtons);
+  modalTitleHolder.appendChild(modalButtons2);
 
   // Add modalButtonHolder to modaltileholder for desktop version
-  if (window.innerWidth > 768) {
+  if (window.innerWidth >= 768) {
     const modalTitleHolder = document.getElementById('modal-title-holder');
     modalTitleHolder.appendChild(modalButtonHolder);
   } else {
