@@ -414,10 +414,15 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .topbar {
     justify-content: flex-start !important;
   }
+
+  .overlay {
+    background-color: #c1c7d0 !important;
+}
+
 }
 
 @media screen and (min-width: 375px) {
@@ -933,17 +938,19 @@ div#sidenav-line {
 }
 
 a.button {
+  display: flex;
+  width: 32vw;
   display: inline-flex;
   color: white;
   background-color: #36b37e;
   border: none;
-  border-radius: 5%;
+  border-radius: 3%;
   padding: 4px 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   flex-direction: row;
   align-items: center;
-  align-content: space-around;
+  justify-content: space-evenly;
 }
 
 a.popup-button {
@@ -958,6 +965,8 @@ a.popup-button {
 }
 
 .modal {
+  margin: 4vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1049,7 +1058,7 @@ ul#modal-technologies li {
   display: flex;
   height: 7vh;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 img.button-image {

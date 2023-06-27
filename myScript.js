@@ -1,14 +1,18 @@
-// eslint-disable-next-line no-unused-vars
+const menuButton = document.getElementById('menu');
+const mySidenav = document.getElementById('mySidenav');
+
 function openNav() {
-  document.getElementById('mySidenav').style.width = '100vw';
-  document.getElementById('main').style.marginLeft = '250px';
+  const mySidenav = document.getElementById('mySidenav');
+  mySidenav.style.width = '100vw';
 }
 
-// eslint-disable-next-line no-unused-vars
 function closeNav() {
-  document.getElementById('mySidenav').style.width = '0';
-  document.getElementById('main').style.marginLeft = '0';
+  const mySidenav = document.getElementById('mySidenav');
+  mySidenav.style.width = '0';
 }
+
+menuButton.addEventListener('click', openNav);
+mySidenav.addEventListener('click', closeNav);
 
 // Create Array to store project details
 const projects = [
@@ -24,6 +28,118 @@ const projects = [
     sourceCodeLogo: 'Assets/Popup/source.svg',
   },
 ];
+
+function openPopup(project) {
+  // Overlay
+  const overlay = document.querySelector('.overlay');
+  overlay.classList.remove('hidden');
+
+  // Modal
+  const modal = document.querySelector('.modal');
+
+  // Add project background image depending on screen size
+  let imageSrc;
+  if (window.innerWidth < 768) {
+    imageSrc = project.image;
+  } else {
+    imageSrc = project.image2;
+  }
+
+  // Add project background image
+  const modalImage = document.createElement('img');
+  modalImage.setAttribute('src', imageSrc);
+  modalImage.setAttribute('class', 'modal-image');
+  modal.appendChild(modalImage);
+
+  // Heading
+  const modalText = document.createElement('h3');
+  modalText.setAttribute('id', 'modal-title');
+  modalText.textContent = project.name;
+  modal.appendChild(modalText);
+
+  // Add technologies used
+  const modalTechnologies = document.createElement('ul');
+  modalTechnologies.setAttribute('id', 'modal-technologies');
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    const listItem = document.createElement('li');
+    listItem.textContent = project.technologies[i];
+    modalTechnologies.appendChild(listItem);
+  }
+  modal.appendChild(modalTechnologies);
+
+  // Add project description
+
+  //  Add content depending on screen size
+
+  if (window.innerWidth < 768) {
+    // Add project description twice for mobile
+    const modalDescription = document.createElement('p');
+    modalDescription.setAttribute('id', 'modal-description');
+    modalDescription.textContent = project.description;
+    modal.appendChild(modalDescription);
+
+    const modalDescription2 = document.createElement('p');
+    modalDescription2.setAttribute('id', 'modal-description');
+    modalDescription2.textContent = project.description;
+    modal.appendChild(modalDescription2);
+  } else {
+    // Add project description once for desktop
+    const modalDescription = document.createElement('p');
+    modalDescription.setAttribute('id', 'modal-description');
+    modalDescription.textContent = project.description;
+    modal.appendChild(modalDescription);
+  }
+
+  // Add div with class "modal-buttons"
+  const modalButtons = document.createElement('div');
+  modalButtons.setAttribute('class', 'modal-buttons');
+
+  // Add button to open live version
+  const liveVersion = document.createElement('a');
+  liveVersion.setAttribute('href', project.liveVersion);
+  liveVersion.setAttribute('target', '_blank');
+  liveVersion.setAttribute('class', 'button');
+  liveVersion.textContent = 'See Live';
+
+  // Add image to live version button
+  const liveVersionImage = document.createElement('img');
+  liveVersionImage.setAttribute('src', './Assets/Popup/live.svg');
+  liveVersionImage.setAttribute('class', 'button-image');
+  liveVersion.appendChild(liveVersionImage);
+
+  modalButtons.appendChild(liveVersion);
+
+  // Add button to open source code
+  const sourceCode = document.createElement('a');
+  sourceCode.setAttribute('href', project.sourceLink);
+  sourceCode.setAttribute('target', '_blank');
+  sourceCode.setAttribute('class', 'button');
+  sourceCode.textContent = 'See Source';
+
+  // Add image to source code button
+  const sourceCodeImage = document.createElement('img');
+  sourceCodeImage.setAttribute('src', './Assets/Popup/source.svg');
+  sourceCodeImage.setAttribute('class', 'button-image');
+  sourceCode.appendChild(sourceCodeImage);
+  modalButtons.appendChild(sourceCode);
+
+  modal.appendChild(modalButtons);
+
+  // Unhide modal
+  modal.classList.remove('hidden');
+
+  // Buttons
+  const openModalBtn = document.querySelector('.btn-open');
+  openModalBtn.addEventListener('click', openModalBtn);
+
+  const closeModal = function () {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  };
+
+  const closeModalBtn = document.querySelector('.btn-close');
+  closeModalBtn.addEventListener('click', closeModal);
+}
 
 // Link to HTML document
 const projectsContainer = document.getElementById('projects-container');
@@ -64,102 +180,3 @@ projects.forEach((project) => {
 
   projectsContainer.appendChild(projectCard);
 });
-
-function openPopup(project) {
-//make popup responsive//
-
-// Overlay
-const overlay = document.querySelector(".overlay");
-overlay.classList.remove("hidden")
-
-//Modal
-const modal = document.querySelector(".modal");
-
-let imageSrc; 
-if (window.innerWidth < 768) {
-  imageSrc = project.image;}
-else {
-  imageSrc = project.image2;
-};
-
-//Add project background image
-const modalImage = document.createElement("img");
-modalImage.setAttribute("src", imageSrc);
-modalImage.setAttribute("class", "modal-image");
-modal.appendChild(modalImage);
-
-//Heading
-const modalText = document.createElement("h3");
-modalText.setAttribute("id", "modal-title");
-modalText.textContent = project.name;
-modal.appendChild(modalText);
-
-//Add technologies
-const modalTechnologies = document.createElement("ul");
-modalTechnologies.setAttribute("id", "modal-technologies");
-for (let i = 0; i < project.technologies.length; i += 1) {
-  const listItem = document.createElement("li");
-  listItem.textContent = project.technologies[i];
-  modalTechnologies.appendChild(listItem);
-}
-modal.appendChild(modalTechnologies);
-
-//Add project description
-const modalDescription = document.createElement("p");
-modalDescription.setAttribute("id", "modal-description");
-modalDescription.textContent = project.description;
-modal.appendChild(modalDescription);
-
-const modalDescription2 = document.createElement("p");
-modalDescription2.setAttribute("id", "modal-description");
-modalDescription2.textContent = project.description;
-modal.appendChild(modalDescription2);
-
-//Add div with class "modal-buttons"
-const modalButtons = document.createElement("div");
-modalButtons.setAttribute("class", "modal-buttons");
-//Add button to open live version
-const liveVersion = document.createElement("a");
-liveVersion.setAttribute("href", project.liveVersion);
-liveVersion.setAttribute("target", "_blank");
-liveVersion.setAttribute("class", "button");
-
-liveVersion.textContent = "Live Version";
-//Add image to live version button
-const liveVersionImage = document.createElement("img");
-liveVersionImage.setAttribute("src", "./Assets/Popup/live.svg");
-liveVersionImage.setAttribute("class", "button-image");
-liveVersion.appendChild(liveVersionImage);
-
-modalButtons.appendChild(liveVersion);
-
-//Add button to open source code
-const sourceCode = document.createElement("a");
-sourceCode.setAttribute("href", project.sourceLink);
-sourceCode.setAttribute("target", "_blank");
-sourceCode.setAttribute("class", "button");
-sourceCode.textContent = "Source Code";
-//Add image to source code button
-const sourceCodeImage = document.createElement("img");
-sourceCodeImage.setAttribute("src", "./Assets/Popup/source.svg");
-sourceCodeImage.setAttribute("class", "button-image");
-sourceCode.appendChild(sourceCodeImage);
-modalButtons.appendChild(sourceCode);
-
-modal.appendChild(modalButtons);
-
-modal.classList.remove("hidden");
-
-//Buttons
-const openModalBtn = document.querySelector(".btn-open");
-openModalBtn.addEventListener("click", openModal);
-
-const closeModalBtn = document.querySelector(".btn-close");
-closeModalBtn.addEventListener("click", closeModal);
-
-const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
-}
-
