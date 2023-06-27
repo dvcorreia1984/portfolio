@@ -684,14 +684,6 @@ button {
     line-height: 2rem !important;
   }
 
-  #modal-button-holder {
-    width: 39vw !important;
-    top: 72vw !important;
-    right: 20px !important;
-    position: absolute !important;
-    justify-content: flex-end !important;
-  }
-
   p#modal-description {
     width: 80vw !important;
   }
@@ -702,6 +694,16 @@ button {
 
   .modal {
     width: 86vw !important;
+  }
+
+  h3#modal-title {
+    margin-top: 0;
+  }
+
+  #modal-button-holder {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
   }
 }
 
@@ -1172,4 +1174,11 @@ button#close-btn-desktop:hover {
 
 button#close-btn-desktop:active {
   background-color: #008552;
+}
+
+div#modal-title-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }

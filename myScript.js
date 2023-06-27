@@ -150,10 +150,21 @@ function openPopup(project) {
   });
 
   // Heading
-  const modalText = document.createElement('h3');
-  modalText.setAttribute('id', 'modal-title');
-  modalText.textContent = project.name;
-  modal.appendChild(modalText);
+  if (window.innerWidth < 768) {
+    const modalText = document.createElement('h3');
+    modalText.setAttribute('id', 'modal-title');
+    modalText.textContent = project.name;
+    modal.appendChild(modalText);
+  } else {
+    // create div with class "modal-title-holder"
+    const modalTitleHolder = document.createElement('div');
+    modalTitleHolder.setAttribute('id', 'modal-title-holder');
+    const modalText = document.createElement('h3');
+    modalText.setAttribute('id', 'modal-title');
+    modalText.textContent = project.name;
+    modalTitleHolder.appendChild(modalText);
+    modal.appendChild(modalTitleHolder);
+  }
 
   if (window.innerWidth < 768) {
     // Add technologies used for mobile version
@@ -243,7 +254,13 @@ function openPopup(project) {
   modalButtonHolder.appendChild(modalButtons);
   modalButtonHolder.appendChild(modalButtons2);
 
-  modal.appendChild(modalButtonHolder);
+  // Add modalButtonHolder to modaltileholder for desktop version
+  if (window.innerWidth > 768) {
+    const modalTitleHolder = document.getElementById('modal-title-holder');
+    modalTitleHolder.appendChild(modalButtonHolder);
+  } else {
+    modal.appendChild(modalButtonHolder);
+  }
 
   // Unhide modal
   modal.classList.remove('hidden');
