@@ -16,12 +16,12 @@ const projects = [
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     image: 'Assets/Popup/popup-mobile.png',
-    image2: 'Assets\Popup\Desktopimage.png',
+    image2: 'Assets/Popup/Desktopimage.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
     sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
-    liveVersionLogo: 'Assets\Popup\live.svg',
-    sourceCodeLogo: 'Assets\Popup\source.svg',
+    liveVersionLogo: 'Assets/Popup/live.svg',
+    sourceCodeLogo: 'Assets/Popup/source.svg',
   },
 ];
 
@@ -66,8 +66,7 @@ projects.forEach((project) => {
 });
 
 function openPopup(project) {
-
-//make popup respnsive
+//make popup responsive//
 
 // Overlay
 const overlay = document.querySelector(".overlay");
@@ -89,10 +88,21 @@ modalImage.setAttribute("src", imageSrc);
 modalImage.setAttribute("class", "modal-image");
 modal.appendChild(modalImage);
 
+//Heading
 const modalText = document.createElement("h3");
 modalText.setAttribute("id", "modal-title");
 modalText.textContent = project.name;
 modal.appendChild(modalText);
+
+//Add technologies
+const modalTechnologies = document.createElement("ul");
+modalTechnologies.setAttribute("id", "modal-technologies");
+for (let i = 0; i < project.technologies.length; i += 1) {
+  const listItem = document.createElement("li");
+  listItem.textContent = project.technologies[i];
+  modalTechnologies.appendChild(listItem);
+}
+modal.appendChild(modalTechnologies);
 
 //Add project description
 const modalDescription = document.createElement("p");

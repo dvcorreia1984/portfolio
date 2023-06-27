@@ -1011,3 +1011,23 @@ a.popup-button {
 .hidden {
   display: none;
 }
+
+ul#modal-technologies {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: flex-start;
+}
+
+ul#modal-technologies li {
+  margin-right: 10px;
+  display: flex;
+  color: #3a4a42;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  align-items: center;
+}
