@@ -129,6 +129,11 @@ Open index.html using live server extension
 - GitHub: [@githubhandle](https://github.com/mershark)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mershark/)
 
+👤 **Muhammad Bilal Liaquat**
+
+- GitHub: [@githubhandle](https://github.com/BilalLiaquat7)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-bilal-liaquat-87863390/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
