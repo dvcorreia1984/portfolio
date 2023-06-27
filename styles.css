@@ -421,8 +421,7 @@ button {
 
   .overlay {
     background-color: #c1c7d0 !important;
-}
-
+  }
 }
 
 @media screen and (min-width: 375px) {
