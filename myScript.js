@@ -18,10 +18,12 @@ mySidenav.addEventListener('click', closeNav);
 const projects = [
   {
     name: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     image: 'Assets/Popup/popup-mobile.png',
     image2: 'Assets/Popup/Desktopimage.png',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    technologies2: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
     liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
     sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
     liveVersionLogo: 'Assets/Popup/live.svg',
@@ -41,15 +43,46 @@ function openPopup(project) {
   let imageSrc;
   if (window.innerWidth < 768) {
     imageSrc = project.image;
-  } else {
+  } else { // Add close button above desktop image
     imageSrc = project.image2;
+    const closeBtn = document.createElement('button');
+    closeBtn.setAttribute('id', 'close-btn-desktop');
+    closeBtn.textContent = 'X';
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      overlay.classList.add('hidden');
+    });
+    modal.appendChild(closeBtn);
   }
 
   // Add project background image
   const modalImage = document.createElement('img');
   modalImage.setAttribute('src', imageSrc);
   modalImage.setAttribute('class', 'modal-image');
+  modalImage.setAttribute('alt', 'Mobile version of project');
+  modalImage.setAttribute('usemap', '#closemap');
   modal.appendChild(modalImage);
+
+  // Add imagemap to background image mobile version
+  const imageMap = document.createElement('map');
+  imageMap.setAttribute('name', 'closemap');
+  const imageMapArea = document.createElement('area');
+  imageMapArea.setAttribute('shape', 'rect');
+  imageMapArea.setAttribute('coords', '0,0,50%,50%');
+
+  // Add event listener to close modal when clicking on background image
+  imageMapArea.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
+  modal.appendChild(imageMapArea);
+  modal.appendChild(imageMap);
+
+  // close modal when clicking on overlay
+  overlay.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+  });
 
   // Heading
   const modalText = document.createElement('h3');
@@ -57,15 +90,26 @@ function openPopup(project) {
   modalText.textContent = project.name;
   modal.appendChild(modalText);
 
-  // Add technologies used
-  const modalTechnologies = document.createElement('ul');
-  modalTechnologies.setAttribute('id', 'modal-technologies');
-  for (let i = 0; i < project.technologies.length; i += 1) {
-    const listItem = document.createElement('li');
-    listItem.textContent = project.technologies[i];
-    modalTechnologies.appendChild(listItem);
+  if (window.innerWidth < 768) {
+    // Add technologies used for mobile version
+    const modalTechnologies = document.createElement('ul');
+    modalTechnologies.setAttribute('id', 'modal-technologies');
+    for (let i = 0; i < project.technologies.length; i += 1) {
+      const listItem = document.createElement('li');
+      listItem.textContent = project.technologies[i];
+      modalTechnologies.appendChild(listItem);
+    }
+    modal.appendChild(modalTechnologies);
+  } else { // Add technologies used for desktop version
+    const modalTechnologies2 = document.createElement('ul');
+    modalTechnologies2.setAttribute('id', 'modal-technologies');
+    for (let i = 0; i < project.technologies2.length; i += 1) {
+      const listItem = document.createElement('li');
+      listItem.textContent = project.technologies2[i];
+      modalTechnologies2.appendChild(listItem);
+    }
+    modal.appendChild(modalTechnologies2);
   }
-  modal.appendChild(modalTechnologies);
 
   // Add project description
   if (window.innerWidth < 768) {
@@ -81,10 +125,10 @@ function openPopup(project) {
     modal.appendChild(modalDescription2);
   } else {
     // Add project description once for desktop
-    const modalDescription = document.createElement('p');
-    modalDescription.setAttribute('id', 'modal-description');
-    modalDescription.textContent = project.description;
-    modal.appendChild(modalDescription);
+    const modalDescription2 = document.createElement('p');
+    modalDescription2.setAttribute('id', 'modal-description2');
+    modalDescription2.textContent = project.description2;
+    modal.appendChild(modalDescription2);
   }
 
   // Add div with class "modal-button-holder"
@@ -136,21 +180,8 @@ function openPopup(project) {
 
   modal.appendChild(modalButtonHolder);
 
-
   // Unhide modal
   modal.classList.remove('hidden');
-
-  // Buttons
-  const openModalBtn = document.querySelector('.btn-open');
-  openModalBtn.addEventListener('click', openModalBtn);
-
-  const closeModal = function () {
-    modal.classList.add('hidden');
-    overlay.classList.add('hidden');
-  };
-
-  const closeModalBtn = document.querySelector('.btn-close');
-  closeModalBtn.addEventListener('click', closeModal);
 }
 
 // Link to HTML document

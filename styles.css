@@ -674,6 +674,36 @@ button {
   .mobile-menu {
     display: flex !important;
   }
+
+  area {
+    display: none;
+  }
+
+  #modal-title {
+    width: 45vw !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  #modal-button-holder {
+    width: 39vw !important;
+    top: 72vw !important;
+    right: 20px !important;
+    position: absolute !important;
+    justify-content: flex-end !important;
+  }
+
+  p#modal-description {
+    width: 80vw !important;
+  }
+
+  div#modal-buttons {
+    padding: 0.5rem 0.75rem !important;
+  }
+
+  .modal {
+    width: 86vw !important;
+  }
 }
 
 .social-footer ul {
@@ -943,7 +973,6 @@ a.button {
   display: flex;
   display: inline-flex;
   color: white;
-  background-color: #36b37e;
   border: none;
   border-radius: 3%;
   cursor: pointer;
@@ -1087,4 +1116,57 @@ p#modal-description {
   width: 19.4375rem;
   font-size: 1rem;
   flex-direction: column;
+}
+
+#close-button-mobile {
+  size: 24px;
+  position: absolute;
+  top: 6.4vh;
+  right: 9.4vw;
+}
+
+#close-button-mobile:hover {
+  cursor: pointer;
+  background-color: #c1c7d0;
+}
+
+area {
+  border-radius: 3px;
+  border: 2px solid white;
+  right: 8.1vw;
+  top: 10.4vw;
+  position: absolute;
+  height: 8vw;
+  z-index: 3;
+  width: 8vw;
+}
+
+area:hover {
+  background-color: #c1c7d0;
+  border-radius: 4px;
+  background-image: url(./Assets/Popup/close-btn.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+div#modal-buttons:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+}
+
+button#close-btn-desktop {
+  border: 3px solid #ebecf0;
+  justify-content: center;
+  border-radius: 4px;
+  margin: -2vw 0 0 81vw;
+  background-color: #ebecf0;
+  color: #67798e;
+  padding: 5px;
+  width: 36px;
+}
+
+button#close-btn-desktop:hover {
+  background-color: #c1c7d0;
+  color: #3a4a42;
+  cursor: pointer;
 }
