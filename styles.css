@@ -933,15 +933,17 @@ div#sidenav-line {
 }
 
 a.button {
+  display: inline-flex;
   color: white;
   background-color: #36b37e;
   border: none;
   border-radius: 5%;
-  padding: 5px 10px;
+  padding: 4px 10px;
   cursor: pointer;
-  margin-right: 10px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 16px;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
 }
 
 a.popup-button {
@@ -1030,4 +1032,26 @@ ul#modal-technologies li {
   background-color: #ebf0ee;
   border-radius: 4px;
   align-items: center;
+}
+
+#modal-title {
+  color: #172b4d;
+  margin: 0.75rem 0;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  align-content: flex-start;
+  text-align: start;
+  padding: 0;
+}
+
+.modal-buttons {
+  display: flex;
+  height: 7vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+img.button-image {
+  padding-left: 15px;
 }
