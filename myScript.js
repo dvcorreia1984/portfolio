@@ -68,9 +68,6 @@ function openPopup(project) {
   modal.appendChild(modalTechnologies);
 
   // Add project description
-
-  //  Add content depending on screen size
-
   if (window.innerWidth < 768) {
     // Add project description twice for mobile
     const modalDescription = document.createElement('p');
@@ -90,12 +87,18 @@ function openPopup(project) {
     modal.appendChild(modalDescription);
   }
 
+  // Add div with class "modal-button-holder"
+  const modalButtonHolder = document.createElement('div');
+  modalButtonHolder.setAttribute('id', 'modal-button-holder');
+
   // Add div with class "modal-buttons"
   const modalButtons = document.createElement('div');
-  modalButtons.setAttribute('class', 'modal-buttons');
+  modalButtons.setAttribute('id', 'modal-buttons');
+  modalButtons.setAttribute('button', 'modal-buttons');
 
   // Add button to open live version
   const liveVersion = document.createElement('a');
+  liveVersion.setAttribute('button', 'modal-btn');
   liveVersion.setAttribute('href', project.liveVersion);
   liveVersion.setAttribute('target', '_blank');
   liveVersion.setAttribute('class', 'button');
@@ -109,8 +112,13 @@ function openPopup(project) {
 
   modalButtons.appendChild(liveVersion);
 
+  const modalButtons2 = document.createElement('div');
+  modalButtons2.setAttribute('id', 'modal-buttons');
+  modalButtons2.setAttribute('button', 'modal-buttons');
+
   // Add button to open source code
   const sourceCode = document.createElement('a');
+  sourceCode.setAttribute('button', 'modal-btn');
   sourceCode.setAttribute('href', project.sourceLink);
   sourceCode.setAttribute('target', '_blank');
   sourceCode.setAttribute('class', 'button');
@@ -121,9 +129,13 @@ function openPopup(project) {
   sourceCodeImage.setAttribute('src', './Assets/Popup/source.svg');
   sourceCodeImage.setAttribute('class', 'button-image');
   sourceCode.appendChild(sourceCodeImage);
-  modalButtons.appendChild(sourceCode);
 
-  modal.appendChild(modalButtons);
+  modalButtons2.appendChild(sourceCode);
+  modalButtonHolder.appendChild(modalButtons);
+  modalButtonHolder.appendChild(modalButtons2);
+
+  modal.appendChild(modalButtonHolder);
+
 
   // Unhide modal
   modal.classList.remove('hidden');

@@ -941,13 +941,11 @@ div#sidenav-line {
 
 a.button {
   display: flex;
-  width: 32vw;
   display: inline-flex;
   color: white;
   background-color: #36b37e;
   border: none;
   border-radius: 3%;
-  padding: 4px 10px;
   cursor: pointer;
   font-size: 14px;
   flex-direction: row;
@@ -1065,4 +1063,28 @@ ul#modal-technologies li {
 
 img.button-image {
   padding-left: 15px;
+}
+
+div#modal-buttons {
+  background-color: #36b37f;
+  width: 35%;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#modal-button-holder {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.75rem;
+}
+
+p#modal-description {
+  letter-spacing: 0.02em;
+  text-align: start;
+  display: flex;
+  width: 19.4375rem;
+  font-size: 1rem;
+  flex-direction: column;
 }
