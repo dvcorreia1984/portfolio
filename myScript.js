@@ -111,36 +111,21 @@ function openPopup(project) {
     imageSrc = project.image;
   } else { // Add close button above desktop image
     imageSrc = project.image2;
-    const closeBtn = document.createElement('button');
-    closeBtn.setAttribute('id', 'close-btn-desktop');
-    closeBtn.textContent = 'X';
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hidden');
-      overlay.classList.add('hidden');
-    });
-    modal.appendChild(closeBtn);
   }
-
-  // Add project background image
-  const modalImage = document.createElement('img');
-  modalImage.setAttribute('src', imageSrc);
-  modalImage.setAttribute('class', 'modal-image');
-  modalImage.setAttribute('alt', 'Mobile version of project');
-  modalImage.setAttribute('usemap', '#closemap');
-  modal.appendChild(modalImage);
 
   // Add container for close button
   const modalCloseBtnContainer = document.createElement('div');
-  modalCloseBtnContainer.setAttribute('id', 'modal-close-btn-container');
+  modalCloseBtnContainer.setAttribute('id', 'modal-container');
 
   // Add close button
   const modalCloseBtn = document.createElement('button');
-  modalCloseBtn.setAttribute('id', 'modal-close-btn');
+  modalCloseBtn.setAttribute('id', 'close-btn-mobile');
 
   // Add image to close button
   const modalCloseBtnImage = document.createElement('img');
-  modalCloseBtnImage.setAttribute('src', './Assets/Popup/close.svg');
-  modalCloseBtnImage.setAttribute('class', 'button-image');
+  modalCloseBtnImage.setAttribute('src', './Assets/Popup/close-btn.svg');
+  modalCloseBtnImage.setAttribute('id', 'close-btn-image');
+  modalCloseBtnImage.setAttribute('alt', 'Close button');
   modalCloseBtn.appendChild(modalCloseBtnImage);
 
   // Add event listener to close button
