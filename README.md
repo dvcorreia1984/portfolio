@@ -124,11 +124,10 @@ Open index.html using live server extension
 - Twitter: [@twitterhandle](https://twitter.com/dvcorreia1984)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/dvcorreia)
 
-👤 **Ye Min Thu**
+👤 **Mershark Takyi**
 
-- GitHub: [@githubhandle](https://github.com/mryeminthu)
-- Twitter: [@twitterhandle](https://twitter.com/mryeminthu)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ye-min-thu-76456a214/)
+- GitHub: [@githubhandle](https://github.com/mershark)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mershark/)
 
 👤 **Muhammad Bilal Liaquat**
 
