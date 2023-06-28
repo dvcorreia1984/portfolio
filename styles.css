@@ -1207,7 +1207,7 @@ div#modal-container::before {
   position: absolute;
   top: 8%;
   right: 5%;
-  transform: translate(-6%,-6%);
+  transform: translate(-6%, -6%);
   margin: 0;
   padding: 4px;
   background-color: #71aff7;
@@ -1245,7 +1245,6 @@ p#modal-button2-text {
   display: inline-block;
   color: white;
   font-size: 16px;
-  font-family: Inter;
   line-height: 24px;
   letter-spacing: 0.51px;
   font-weight: 400;
@@ -1257,4 +1256,14 @@ button#modal-button2 {
   padding: 8px 16px;
   display: flex;
   align-items: center;
+}
+
+button#modal-button1:hover,
+button#modal-button2:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
+}
+
+button#modal-button1:active,
+button#modal-button2:active {
+  background-color: #008552;
 }

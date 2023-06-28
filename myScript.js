@@ -105,14 +105,6 @@ function openPopup(project) {
   const modal = document.querySelector('.modal');
   modal.innerHTML = '';
 
-  // Add project background image depending on screen size
-  let imageSrc;
-  if (window.innerWidth < 768) {
-    imageSrc = project.image;
-  } else { // Add close button above desktop image
-    imageSrc = project.image2;
-  }
-
   // Add container for close button
   const modalCloseBtnContainer = document.createElement('div');
   modalCloseBtnContainer.setAttribute('id', 'modal-container');
@@ -205,7 +197,7 @@ function openPopup(project) {
   const modalButtonHolder = document.createElement('div');
   modalButtonHolder.setAttribute('id', 'modal-button-holder');
 
-// Add liveversion button
+  // Add liveversion button
   const modalButton1 = document.createElement('button');
   modalButton1.setAttribute('id', 'modal-button1');
   modalButton1.setAttribute('class', 'modal-button');
@@ -245,13 +237,12 @@ function openPopup(project) {
   modalButton2.appendChild(modalButton2Image);
   modalButtonHolder.appendChild(modalButton2);
 
-  // Append container to modal
-  modal.appendChild(modalButtonHolder);
-
-
-
-
-
+  // Append container depending on screen size
+  if (window.innerWidth < 768) {
+    modal.appendChild(modalButtonHolder);
+  } else {
+    modalTitleHolder.appendChild(modalButtonHolder);
+  }
 
   // Unhide modal
   modal.classList.remove('hidden');
