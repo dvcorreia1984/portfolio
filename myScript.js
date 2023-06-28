@@ -201,65 +201,59 @@ function openPopup(project) {
     modal.appendChild(modalDescription2);
   }
 
+  // Add container for buttons
+  const modalButtonHolder = document.createElement('div');
+  modalButtonHolder.setAttribute('id', 'modal-button-holder');
 
-  // Add 
+// Add liveversion button
+  const modalButton1 = document.createElement('button');
+  modalButton1.setAttribute('id', 'modal-button1');
+  modalButton1.setAttribute('class', 'modal-button');
+  modalButton1.setAttribute('type', 'button');
+  modalButton1.setAttribute('onclick', `window.open('${project.liveVersion}', '_blank')`);
 
-//   // Add div with class "modal-button-holder"
-//   const modalButtonHolder = document.createElement('div');
-//   modalButtonHolder.setAttribute('id', 'modal-button-holder');
+  // Add text to button
+  const modalButton1Text = document.createElement('p');
+  modalButton1Text.setAttribute('id', 'modal-button1-text');
+  modalButton1Text.textContent = 'See Live';
+  modalButton1.appendChild(modalButton1Text);
 
-//   // Add div with class "modal-buttons"
-//   const modalButtons = document.createElement('div');
-//   modalButtons.setAttribute('id', 'modal-buttons');
-//   modalButtons.setAttribute('button', 'modal-buttons');
+  // Add image to button
+  const modalButton1Image = document.createElement('img');
+  modalButton1Image.setAttribute('src', project.liveVersionLogo);
+  modalButton1Image.setAttribute('alt', 'Live version');
+  modalButton1.appendChild(modalButton1Image);
+  modalButtonHolder.appendChild(modalButton1);
 
-//   // Add button to open live version
-//   const liveVersion = document.createElement('a');
-//   liveVersion.setAttribute('button', 'modal-btn');
-//   liveVersion.setAttribute('href', project.liveVersion);
-//   liveVersion.setAttribute('target', '_blank');
-//   liveVersion.setAttribute('class', 'button');
-//   liveVersion.textContent = 'See Live';
+  // Add source code button
+  const modalButton2 = document.createElement('button');
+  modalButton2.setAttribute('id', 'modal-button2');
+  modalButton2.setAttribute('class', 'modal-button');
+  modalButton2.setAttribute('type', 'button');
+  modalButton2.setAttribute('onclick', `window.open('${project.sourceLink}', '_blank')`);
 
-//   // Add image to live version button
-//   const liveVersionImage = document.createElement('img');
-//   liveVersionImage.setAttribute('src', './Assets/Popup/live.svg');
-//   liveVersionImage.setAttribute('class', 'button-image');
-//   liveVersion.appendChild(liveVersionImage);
+  // Add text to button
+  const modalButton2Text = document.createElement('p');
+  modalButton2Text.setAttribute('id', 'modal-button2-text');
+  modalButton2Text.textContent = 'See Source';
+  modalButton2.appendChild(modalButton2Text);
 
-//   modalButtons.appendChild(liveVersion);
+  // Add image to button
+  const modalButton2Image = document.createElement('img');
+  modalButton2Image.setAttribute('src', project.sourceCodeLogo);
+  modalButton2Image.setAttribute('alt', 'Source code');
+  modalButton2.appendChild(modalButton2Image);
+  modalButtonHolder.appendChild(modalButton2);
 
-//   const modalButtons2 = document.createElement('div');
-//   modalButtons2.setAttribute('id', 'modal-buttons');
-//   modalButtons2.setAttribute('button', 'modal-buttons');
+  // Append container to modal
+  modal.appendChild(modalButtonHolder);
 
-//   // Add button to open source code
-//   const sourceCode = document.createElement('a');
-//   sourceCode.setAttribute('button', 'modal-btn');
-//   sourceCode.setAttribute('href', project.sourceLink);
-//   sourceCode.setAttribute('target', '_blank');
-//   sourceCode.setAttribute('class', 'button');
-//   sourceCode.textContent = 'See Source';
 
-//   // Add image to source code button
-//   const sourceCodeImage = document.createElement('img');
-//   sourceCodeImage.setAttribute('src', './Assets/Popup/source.svg');
-//   sourceCodeImage.setAttribute('class', 'button-image');
-//   sourceCode.appendChild(sourceCodeImage);
 
-//   modalButtons2.appendChild(sourceCode);
-//   modalTitleHolder.appendChild(modalButtons);
-//   modalTitleHolder.appendChild(modalButtons2);
 
-//   // Add modalButtonHolder to modaltileholder for desktop version
-//   if (window.innerWidth >= 768) {
-//     const modalTitleHolder = document.getElementById('modal-title-holder');
-//     modalTitleHolder.appendChild(modalButtonHolder);
-//   } else {
-//     modal.appendChild(modalButtonHolder);
-//   }
 
-//   // Unhide modal
+
+  // Unhide modal
   modal.classList.remove('hidden');
 }
 

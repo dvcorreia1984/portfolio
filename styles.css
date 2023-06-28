@@ -1128,13 +1128,14 @@ div#modal-buttons {
   display: flex;
   justify-content: space-around;
   gap: 0.75rem;
+  margin-top: 12px;
 }
 
 p#modal-description {
   letter-spacing: 0.02em;
   text-align: start;
   display: flex;
-  width: 19.4375rem;
+  width: 102%;
   font-size: 1rem;
   flex-direction: column;
 }
@@ -1236,4 +1237,24 @@ div#modal-container::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+p#modal-button1-text,
+p#modal-button2-text {
+  padding-right: 8px;
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-family: Inter;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+  font-weight: 400;
+}
+
+button#modal-button1,
+button#modal-button2 {
+  margin: 0;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
 }
