@@ -674,14 +674,6 @@ button {
     display: flex !important;
   }
 
-  area {
-    background-image: url(./Assets/Popup/desktop-close.svg) !important;
-    background-color: #ebecf0 !important;
-    border-radius: 10px !important;
-    background-size: 24px !important;
-    padding: 10px !important;
-  }
-
   #modal-title {
     width: 45vw !important;
     font-size: 1.5rem !important;
@@ -708,6 +700,30 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end !important;
+  }
+
+  div#modal-container {
+    margin-top: 8vw !important;
+    background-image: url(./Assets/Popup/Desktopimage.png) !important;
+    padding-bottom: calc(100% / (874 / 618)) !important;
+  }
+
+  #close-btn-mobile {
+    top: -11% !important;
+    right: 0% !important;
+    transform: translate(-3%, -4%) !important;
+    background-color: #ebecf0 !important;
+    border: 2px solid #ebecf0 !important;
+    border-radius: 8px !important;
+    width: 5vw !important;
+    height: 5vw !important;
+  }
+
+  #close-btn-mobile:hover {
+    width: 5.5vw !important;
+    height: 5.5vw !important;
+    background-color: #0196c1 !important;
+    border: 2px solid #0196c1 !important;
   }
 }
 
@@ -1188,8 +1204,8 @@ div#modal-container::before {
 
 #close-btn-mobile {
   position: absolute;
-  top: 9%;
-  right: 6%;
+  top: 8%;
+  right: 5%;
   transform: translate(-6%,-6%);
   margin: 0;
   padding: 4px;
@@ -1204,7 +1220,7 @@ div#modal-container::before {
 #close-btn-mobile:hover {
   width: 9vw;
   height: 9vw;
-  background-color: #5ad3dd !important;
+  background-color: #5ad3dd;
   animation: shake 0.5s ease-in-out infinite;
 }
 
