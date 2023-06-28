@@ -725,6 +725,10 @@ button {
     background-color: #0196c1 !important;
     border: 2px solid #0196c1 !important;
   }
+
+  ul#modal-technologies {
+    margin-bottom: 32px !important;
+  }
 }
 
 .social-footer ul {
@@ -1128,7 +1132,6 @@ div#modal-buttons {
   display: flex;
   justify-content: space-around;
   gap: 0.75rem;
-  margin-top: 12px;
 }
 
 p#modal-description {
@@ -1182,6 +1185,8 @@ div#modal-title-holder {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  height: 8vh;
+  margin-top: 12px;
 }
 
 /* Close button for mobile */

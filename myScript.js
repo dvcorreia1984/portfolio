@@ -237,7 +237,7 @@ function openPopup(project) {
   modalButton2.appendChild(modalButton2Image);
   modalButtonHolder.appendChild(modalButton2);
 
-  // Append container depending on screen size
+  // Add buttons to modal depending on screen size
   if (window.innerWidth < 768) {
     modal.appendChild(modalButtonHolder);
   } else {
