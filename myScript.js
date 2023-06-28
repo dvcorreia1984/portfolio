@@ -103,10 +103,11 @@ function openPopup(project) {
 
   // Modal
   const modal = document.querySelector('.modal');
+  modal.innerHTML = '';
 
   // Add project background image depending on screen size
   let imageSrc;
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth < 768) {
     imageSrc = project.image;
   } else { // Add close button above desktop image
     imageSrc = project.image2;
@@ -149,120 +150,120 @@ function openPopup(project) {
     overlay.classList.add('hidden');
   });
 
-  // Heading
-  const modalTitleHolder = document.createElement('div');
-  if (window.innerWidth <= 768) {
-    const modalText = document.createElement('h3');
-    modalText.setAttribute('id', 'modal-title');
-    modalText.textContent = project.name;
-    modal.appendChild(modalText);
-  } else {
-    // create div with class "modal-title-holder"
-    modalTitleHolder.setAttribute('id', 'modal-title-holder');
-    const modalText = document.createElement('h3');
-    modalText.setAttribute('id', 'modal-title');
-    modalText.textContent = project.name;
-    modalTitleHolder.appendChild(modalText);
-    modal.appendChild(modalTitleHolder);
-  }
+//   // Heading
+//   const modalTitleHolder = document.createElement('div');
+//   if (window.innerWidth <= 768) {
+//     const modalText = document.createElement('h3');
+//     modalText.setAttribute('id', 'modal-title');
+//     modalText.textContent = project.name;
+//     modal.appendChild(modalText);
+//   } else {
+//     // create div with class "modal-title-holder"
+//     modalTitleHolder.setAttribute('id', 'modal-title-holder');
+//     const modalText = document.createElement('h3');
+//     modalText.setAttribute('id', 'modal-title');
+//     modalText.textContent = project.name;
+//     modalTitleHolder.appendChild(modalText);
+//     modal.appendChild(modalTitleHolder);
+//   }
 
-  if (window.innerWidth <= 768) {
-    // Add technologies used for mobile version
-    const modalTechnologies = document.createElement('ul');
-    modalTechnologies.setAttribute('id', 'modal-technologies');
-    for (let i = 0; i < project.technologies.length; i += 1) {
-      const listItem = document.createElement('li');
-      listItem.textContent = project.technologies[i];
-      modalTechnologies.appendChild(listItem);
-    }
-    modal.appendChild(modalTechnologies);
-  } else { // Add technologies used for desktop version
-    const modalTechnologies2 = document.createElement('ul');
-    modalTechnologies2.setAttribute('id', 'modal-technologies');
-    for (let i = 0; i < project.technologies2.length; i += 1) {
-      const listItem = document.createElement('li');
-      listItem.textContent = project.technologies2[i];
-      modalTechnologies2.appendChild(listItem);
-    }
-    modal.appendChild(modalTechnologies2);
-  }
+//   if (window.innerWidth <= 768) {
+//     // Add technologies used for mobile version
+//     const modalTechnologies = document.createElement('ul');
+//     modalTechnologies.setAttribute('id', 'modal-technologies');
+//     for (let i = 0; i < project.technologies.length; i += 1) {
+//       const listItem = document.createElement('li');
+//       listItem.textContent = project.technologies[i];
+//       modalTechnologies.appendChild(listItem);
+//     }
+//     modal.appendChild(modalTechnologies);
+//   } else { // Add technologies used for desktop version
+//     const modalTechnologies2 = document.createElement('ul');
+//     modalTechnologies2.setAttribute('id', 'modal-technologies');
+//     for (let i = 0; i < project.technologies2.length; i += 1) {
+//       const listItem = document.createElement('li');
+//       listItem.textContent = project.technologies2[i];
+//       modalTechnologies2.appendChild(listItem);
+//     }
+//     modal.appendChild(modalTechnologies2);
+//   }
 
-  // Add project description
-  if (window.innerWidth <= 768) {
-    // Add project description twice for mobile
-    const modalDescription = document.createElement('p');
-    modalDescription.setAttribute('id', 'modal-description');
-    modalDescription.textContent = project.description;
-    modal.appendChild(modalDescription);
+//   // Add project description
+//   if (window.innerWidth <= 768) {
+//     // Add project description twice for mobile
+//     const modalDescription = document.createElement('p');
+//     modalDescription.setAttribute('id', 'modal-description');
+//     modalDescription.textContent = project.description;
+//     modal.appendChild(modalDescription);
 
-    const modalDescription2 = document.createElement('p');
-    modalDescription2.setAttribute('id', 'modal-description');
-    modalDescription2.textContent = project.description;
-    modal.appendChild(modalDescription2);
-  } else {
-    // Add project description once for desktop
-    const modalDescription2 = document.createElement('p');
-    modalDescription2.setAttribute('id', 'modal-description2');
-    modalDescription2.textContent = project.description2;
-    modal.appendChild(modalDescription2);
-  }
+//     const modalDescription2 = document.createElement('p');
+//     modalDescription2.setAttribute('id', 'modal-description');
+//     modalDescription2.textContent = project.description;
+//     modal.appendChild(modalDescription2);
+//   } else {
+//     // Add project description once for desktop
+//     const modalDescription2 = document.createElement('p');
+//     modalDescription2.setAttribute('id', 'modal-description2');
+//     modalDescription2.textContent = project.description2;
+//     modal.appendChild(modalDescription2);
+//   }
 
-  // Add div with class "modal-button-holder"
-  const modalButtonHolder = document.createElement('div');
-  modalButtonHolder.setAttribute('id', 'modal-button-holder');
+//   // Add div with class "modal-button-holder"
+//   const modalButtonHolder = document.createElement('div');
+//   modalButtonHolder.setAttribute('id', 'modal-button-holder');
 
-  // Add div with class "modal-buttons"
-  const modalButtons = document.createElement('div');
-  modalButtons.setAttribute('id', 'modal-buttons');
-  modalButtons.setAttribute('button', 'modal-buttons');
+//   // Add div with class "modal-buttons"
+//   const modalButtons = document.createElement('div');
+//   modalButtons.setAttribute('id', 'modal-buttons');
+//   modalButtons.setAttribute('button', 'modal-buttons');
 
-  // Add button to open live version
-  const liveVersion = document.createElement('a');
-  liveVersion.setAttribute('button', 'modal-btn');
-  liveVersion.setAttribute('href', project.liveVersion);
-  liveVersion.setAttribute('target', '_blank');
-  liveVersion.setAttribute('class', 'button');
-  liveVersion.textContent = 'See Live';
+//   // Add button to open live version
+//   const liveVersion = document.createElement('a');
+//   liveVersion.setAttribute('button', 'modal-btn');
+//   liveVersion.setAttribute('href', project.liveVersion);
+//   liveVersion.setAttribute('target', '_blank');
+//   liveVersion.setAttribute('class', 'button');
+//   liveVersion.textContent = 'See Live';
 
-  // Add image to live version button
-  const liveVersionImage = document.createElement('img');
-  liveVersionImage.setAttribute('src', './Assets/Popup/live.svg');
-  liveVersionImage.setAttribute('class', 'button-image');
-  liveVersion.appendChild(liveVersionImage);
+//   // Add image to live version button
+//   const liveVersionImage = document.createElement('img');
+//   liveVersionImage.setAttribute('src', './Assets/Popup/live.svg');
+//   liveVersionImage.setAttribute('class', 'button-image');
+//   liveVersion.appendChild(liveVersionImage);
 
-  modalButtons.appendChild(liveVersion);
+//   modalButtons.appendChild(liveVersion);
 
-  const modalButtons2 = document.createElement('div');
-  modalButtons2.setAttribute('id', 'modal-buttons');
-  modalButtons2.setAttribute('button', 'modal-buttons');
+//   const modalButtons2 = document.createElement('div');
+//   modalButtons2.setAttribute('id', 'modal-buttons');
+//   modalButtons2.setAttribute('button', 'modal-buttons');
 
-  // Add button to open source code
-  const sourceCode = document.createElement('a');
-  sourceCode.setAttribute('button', 'modal-btn');
-  sourceCode.setAttribute('href', project.sourceLink);
-  sourceCode.setAttribute('target', '_blank');
-  sourceCode.setAttribute('class', 'button');
-  sourceCode.textContent = 'See Source';
+//   // Add button to open source code
+//   const sourceCode = document.createElement('a');
+//   sourceCode.setAttribute('button', 'modal-btn');
+//   sourceCode.setAttribute('href', project.sourceLink);
+//   sourceCode.setAttribute('target', '_blank');
+//   sourceCode.setAttribute('class', 'button');
+//   sourceCode.textContent = 'See Source';
 
-  // Add image to source code button
-  const sourceCodeImage = document.createElement('img');
-  sourceCodeImage.setAttribute('src', './Assets/Popup/source.svg');
-  sourceCodeImage.setAttribute('class', 'button-image');
-  sourceCode.appendChild(sourceCodeImage);
+//   // Add image to source code button
+//   const sourceCodeImage = document.createElement('img');
+//   sourceCodeImage.setAttribute('src', './Assets/Popup/source.svg');
+//   sourceCodeImage.setAttribute('class', 'button-image');
+//   sourceCode.appendChild(sourceCodeImage);
 
-  modalButtons2.appendChild(sourceCode);
-  modalTitleHolder.appendChild(modalButtons);
-  modalTitleHolder.appendChild(modalButtons2);
+//   modalButtons2.appendChild(sourceCode);
+//   modalTitleHolder.appendChild(modalButtons);
+//   modalTitleHolder.appendChild(modalButtons2);
 
-  // Add modalButtonHolder to modaltileholder for desktop version
-  if (window.innerWidth >= 768) {
-    const modalTitleHolder = document.getElementById('modal-title-holder');
-    modalTitleHolder.appendChild(modalButtonHolder);
-  } else {
-    modal.appendChild(modalButtonHolder);
-  }
+//   // Add modalButtonHolder to modaltileholder for desktop version
+//   if (window.innerWidth >= 768) {
+//     const modalTitleHolder = document.getElementById('modal-title-holder');
+//     modalTitleHolder.appendChild(modalButtonHolder);
+//   } else {
+//     modal.appendChild(modalButtonHolder);
+//   }
 
-  // Unhide modal
+//   // Unhide modal
   modal.classList.remove('hidden');
 }
 
