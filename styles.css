@@ -689,6 +689,7 @@ button {
   }
 
   .modal {
+    top: 85vh !important;
     width: 86vw !important;
   }
 
@@ -728,6 +729,11 @@ button {
 
   ul#modal-technologies {
     margin-bottom: 32px !important;
+  }
+
+  button#modal-button1,
+  button#modal-button2 {
+    z-index: 3 !important;
   }
 }
 
@@ -1019,6 +1025,7 @@ a.popup-button {
 }
 
 .modal {
+  top: 125vh;
   margin: 4vw;
   width: 80vw;
   display: flex;
