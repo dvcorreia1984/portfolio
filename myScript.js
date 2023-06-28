@@ -129,20 +129,29 @@ function openPopup(project) {
   modalImage.setAttribute('usemap', '#closemap');
   modal.appendChild(modalImage);
 
-  // Add imagemap to background image mobile version
-  const imageMap = document.createElement('map');
-  imageMap.setAttribute('name', 'closemap');
-  const imageMapArea = document.createElement('area');
-  imageMapArea.setAttribute('shape', 'rect');
-  imageMapArea.setAttribute('coords', '0,0,50%,50%');
+  // Add container for close button
+  const modalCloseBtnContainer = document.createElement('div');
+  modalCloseBtnContainer.setAttribute('id', 'modal-close-btn-container');
 
-  // Add event listener to close modal when clicking on background image
-  imageMapArea.addEventListener('click', () => {
+  // Add close button
+  const modalCloseBtn = document.createElement('button');
+  modalCloseBtn.setAttribute('id', 'modal-close-btn');
+
+  // Add image to close button
+  const modalCloseBtnImage = document.createElement('img');
+  modalCloseBtnImage.setAttribute('src', './Assets/Popup/close.svg');
+  modalCloseBtnImage.setAttribute('class', 'button-image');
+  modalCloseBtn.appendChild(modalCloseBtnImage);
+
+  // Add event listener to close button
+  modalCloseBtn.addEventListener('click', () => {
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
   });
-  modal.appendChild(imageMapArea);
-  modal.appendChild(imageMap);
+
+  // Add close button to container
+  modalCloseBtnContainer.appendChild(modalCloseBtn);
+  modal.appendChild(modalCloseBtnContainer);
 
   // close modal when clicking on overlay
   overlay.addEventListener('click', () => {
@@ -150,63 +159,65 @@ function openPopup(project) {
     overlay.classList.add('hidden');
   });
 
-//   // Heading
-//   const modalTitleHolder = document.createElement('div');
-//   if (window.innerWidth <= 768) {
-//     const modalText = document.createElement('h3');
-//     modalText.setAttribute('id', 'modal-title');
-//     modalText.textContent = project.name;
-//     modal.appendChild(modalText);
-//   } else {
-//     // create div with class "modal-title-holder"
-//     modalTitleHolder.setAttribute('id', 'modal-title-holder');
-//     const modalText = document.createElement('h3');
-//     modalText.setAttribute('id', 'modal-title');
-//     modalText.textContent = project.name;
-//     modalTitleHolder.appendChild(modalText);
-//     modal.appendChild(modalTitleHolder);
-//   }
+  // Heading
+  const modalTitleHolder = document.createElement('div');
+  if (window.innerWidth < 768) { // Mobile version
+    const modalText = document.createElement('h3');
+    modalText.setAttribute('id', 'modal-title');
+    modalText.textContent = project.name;
+    modal.appendChild(modalText);
+  } else { // Desktop version
+    modalTitleHolder.setAttribute('id', 'modal-title-holder');
+    const modalText = document.createElement('h3');
+    modalText.setAttribute('id', 'modal-title');
+    modalText.textContent = project.name;
+    modalTitleHolder.appendChild(modalText);
+    modal.appendChild(modalTitleHolder);
+  }
 
-//   if (window.innerWidth <= 768) {
-//     // Add technologies used for mobile version
-//     const modalTechnologies = document.createElement('ul');
-//     modalTechnologies.setAttribute('id', 'modal-technologies');
-//     for (let i = 0; i < project.technologies.length; i += 1) {
-//       const listItem = document.createElement('li');
-//       listItem.textContent = project.technologies[i];
-//       modalTechnologies.appendChild(listItem);
-//     }
-//     modal.appendChild(modalTechnologies);
-//   } else { // Add technologies used for desktop version
-//     const modalTechnologies2 = document.createElement('ul');
-//     modalTechnologies2.setAttribute('id', 'modal-technologies');
-//     for (let i = 0; i < project.technologies2.length; i += 1) {
-//       const listItem = document.createElement('li');
-//       listItem.textContent = project.technologies2[i];
-//       modalTechnologies2.appendChild(listItem);
-//     }
-//     modal.appendChild(modalTechnologies2);
-//   }
+  if (window.innerWidth < 768) {
+    // Add technologies used for mobile version
+    const modalTechnologies = document.createElement('ul');
+    modalTechnologies.setAttribute('id', 'modal-technologies');
+    for (let i = 0; i < project.technologies.length; i += 1) {
+      const listItem = document.createElement('li');
+      listItem.textContent = project.technologies[i];
+      modalTechnologies.appendChild(listItem);
+    }
+    modal.appendChild(modalTechnologies);
+  } else { // Add technologies used for desktop version
+    const modalTechnologies2 = document.createElement('ul');
+    modalTechnologies2.setAttribute('id', 'modal-technologies');
+    for (let i = 0; i < project.technologies2.length; i += 1) {
+      const listItem = document.createElement('li');
+      listItem.textContent = project.technologies2[i];
+      modalTechnologies2.appendChild(listItem);
+    }
+    modal.appendChild(modalTechnologies2);
+  }
 
-//   // Add project description
-//   if (window.innerWidth <= 768) {
-//     // Add project description twice for mobile
-//     const modalDescription = document.createElement('p');
-//     modalDescription.setAttribute('id', 'modal-description');
-//     modalDescription.textContent = project.description;
-//     modal.appendChild(modalDescription);
+  // Add project description
+  if (window.innerWidth < 768) {
+    // Add project description twice for mobile
+    const modalDescription = document.createElement('p');
+    modalDescription.setAttribute('id', 'modal-description');
+    modalDescription.textContent = project.description;
+    modal.appendChild(modalDescription);
 
-//     const modalDescription2 = document.createElement('p');
-//     modalDescription2.setAttribute('id', 'modal-description');
-//     modalDescription2.textContent = project.description;
-//     modal.appendChild(modalDescription2);
-//   } else {
-//     // Add project description once for desktop
-//     const modalDescription2 = document.createElement('p');
-//     modalDescription2.setAttribute('id', 'modal-description2');
-//     modalDescription2.textContent = project.description2;
-//     modal.appendChild(modalDescription2);
-//   }
+    const modalDescription2 = document.createElement('p');
+    modalDescription2.setAttribute('id', 'modal-description');
+    modalDescription2.textContent = project.description;
+    modal.appendChild(modalDescription2);
+  } else {
+    // Add project description once for desktop
+    const modalDescription2 = document.createElement('p');
+    modalDescription2.setAttribute('id', 'modal-description2');
+    modalDescription2.textContent = project.description2;
+    modal.appendChild(modalDescription2);
+  }
+
+
+  // Add 
 
 //   // Add div with class "modal-button-holder"
 //   const modalButtonHolder = document.createElement('div');
