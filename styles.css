@@ -1325,6 +1325,15 @@ button#modal-button2:active {
   visibility: visible;
 }
 
+small {
+  color: #e74c3c;
+  margin-top: 5px;
+  display: flex;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: large;
+}
+
 .form-control small {
   position: absolute;
   bottom: 0;
@@ -1335,15 +1344,6 @@ button#modal-button2:active {
 .form-control.error small {
   color: #e74c3c;
   visibility: visible;
-}
-
-small {
-  color: #e74c3c;
-  margin-top: 5px;
-  display: flex;
-  border-radius: 4px;
-  padding: 5px;
-  font-size: large;
 }
 
 button#submit {
