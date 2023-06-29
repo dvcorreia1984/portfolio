@@ -1282,7 +1282,6 @@ button#modal-button2:active {
 
 /* form validation */
 .form-control {
-  margin-bottom: 10px;
   position: relative;
 }
 
@@ -1336,4 +1335,24 @@ button#modal-button2:active {
 .form-control.error small {
   color: #e74c3c;
   visibility: visible;
+}
+
+small {
+  color: #e74c3c;
+  margin-top: 5px;
+  display: flex;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: large;
+}
+
+button#submit {
+  margin: 0;
+}
+
+div#error-message-submit {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

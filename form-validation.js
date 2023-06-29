@@ -11,7 +11,7 @@ function checkInputs() {
 
   function setErrorFor(input, message) {
     const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
+    const small = document.querySelector('small');
     formControl.className = 'form-control error';
     small.innerText = message;
   }
