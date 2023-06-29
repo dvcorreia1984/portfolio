@@ -5,13 +5,13 @@ email.addEventListener('input', (event) => {
   if (email.validity.typeMismatch) {
     email.setCustomValidity('I am expecting an email address!');
   } else {
-    email.setCustomValidity('Please enter your email in lowercase');
+    email.setCustomValidity('');
   }
 
-  // Add lowercase validation to email
+  // Add lowercase validation
   if (email.value !== email.value.toLowerCase()) {
-    email.setCustomValidity('Please enter your email in lowercase');
+    email.setCustomValidity('Email address must be lowercase!');
   } else {
-    email.setCustomValidity('Please enter your email in lowercase' + email.value.toLowerCase());
+    email.setCustomValidity('');
   }
 });
