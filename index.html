@@ -143,12 +143,12 @@
 <div class="wrapper footer">
 <div><p id=footertext>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
 <div class="form">
-<form action="https://formspree.io/f/meqwblog" method="post">
-      <input type="text" id="name" name="user_name" placeholder="Full Name" maxlength="30" required>
-      <input type="email" id="mail" name="user_email" placeholder="Email Address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-      <textarea id="msg" name="user_message" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
-      <button id="formbutton" type="submit" name="submit" class="button">Get in touch</button>
-</form>
+  <form id="contact-form" method="post">
+    <input type="text" id="name" name="name" placeholder="Full Name">
+    <input type="email" id="mail" name="mail" placeholder="Email Address">
+    <textarea id="msg" name="message" placeholder="Hey I'd like to connect to..."></textarea>
+    <button id="submit" type="submit" name="submit" class="button">Get in touch</button>
+  </form>  
 </div>
 </section>
 <div class="email">victor@onsleer.co.za</div>
@@ -175,5 +175,6 @@
 
 
 <script src="./myScript.js"></script>
+<script src="./form-validation.js"></script>
 </body>
 </html>
