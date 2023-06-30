@@ -28,4 +28,8 @@ form.addEventListener('submit', (e) => {
 });
 
 const userData = JSON.parse(localStorage.getItem('Data'));
-
+window.onload = () => {
+  document.getElementById('email').value = userData.email;
+  document.getElementById('fullname').value = userData.text;
+  document.getElementById('message').value = userData.message;
+};
