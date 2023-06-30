@@ -142,14 +142,38 @@
 <figure id="formimage"></figure>
 <div class="wrapper footer">
 <div><p id=footertext>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
-<div class="form">
-<form action="https://formspree.io/f/meqwblog" method="post">
-      <input type="text" id="name" name="user_name" placeholder="Full Name" maxlength="30" required>
-      <input type="email" id="mail" name="user_email" placeholder="Email Address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
-      <textarea id="msg" name="user_message" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
-      <button id="formbutton" type="submit" name="submit" class="button">Get in touch</button>
-</form>
+
+<div class="form-container">
+  <form id="form" action="https://formspree.io/f/meqwblog" method="post">
+    <div class="form-control">
+      <input type="text" id="fullname" placeholder="Full Name" maxlength="30" required>
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+
+    <div class="form-control">
+      <input type="email" placeholder="Email Address" id="email" required>
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+
+    <div class="form-control">
+      <input placeholder="Hey I'd like to connect to..." id="msg" name="message" maxlength="500" required>
+      <i class="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
+    </div>
+
+    <div id="error-message-submit" class="form-control">
+      <button id="submit" type="submit">Get in touch</button>
+      <p id="error-message"></p>
+    </div>
+  </form>  
 </div>
+
+
 </section>
 <div class="email">victor@onsleer.co.za</div>
 </main>
@@ -175,5 +199,6 @@
 
 
 <script src="./myScript.js"></script>
+<script src="./form-validation.js"></script>
 </body>
 </html>
