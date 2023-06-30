@@ -144,32 +144,36 @@
 <div><p id=footertext>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
 
 <div class="form-container">
-  <form id="form" class="form" action="https://formspree.io/f/meqwblog" method="post">
+  <form id="form" action="https://formspree.io/f/meqwblog" method="post">
     <div class="form-control">
       <input type="text" id="fullname" placeholder="Full Name" maxlength="30" required>
       <i class="fas fa-check-circle"></i>
       <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
     </div>
 
     <div class="form-control">
       <input type="email" placeholder="Email Address" id="email" required>
       <i class="fas fa-check-circle"></i>
       <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
     </div>
 
     <div class="form-control">
       <input placeholder="Hey I'd like to connect to..." id="msg" name="message" maxlength="500" required>
       <i class="fas fa-check-circle"></i>
       <i class="fas fa-exclamation-circle"></i>
+      <small>Error message</small>
     </div>
 
-    <div id="error-message-submit">
-    <button id="submit" type="submit" name="submit" class="button">Get in touch</button>
-    <small></small>
+    <div id="error-message-submit" class="form-control">
+      <button id="submit" type="submit">Get in touch</button>
+      <p id="error-message"></p>
     </div>
-
   </form>  
 </div>
+
+
 </section>
 <div class="email">victor@onsleer.co.za</div>
 </main>
