@@ -11,3 +11,15 @@ form.addEventListener('submit', (e) => {
   }
   errorMessage.style.color = 'red';
 });
+
+// Store email in local storage
+const email = document.getElementById('email');
+const form = document.getElementById('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  localStorage.setItem('email', email.value);
+  form.reset();
+}
+
+
