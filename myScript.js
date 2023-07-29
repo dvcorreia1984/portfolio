@@ -17,15 +17,15 @@ mySidenav.addEventListener('click', closeNav);
 // Create Array to store project details
 const projects = [
   {
-    name: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-    description2: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    image: 'Assets/Popup/popup-mobile.png',
-    image2: 'Assets/Popup/Desktopimage.png',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    technologies2: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-    liveVersion: 'https://dvcorreia1984.github.io/portfolio/',
-    sourceLink: 'https://github.com/dvcorreia1984/portfolio.git',
+    name: 'To Do List',
+    description: "This app is a simple to-do-list that can add items, mark them as done and delete them. It was built using JavaScript, HTML and CSS. It was a great way to practice DOM manipulation and event listeners. I also used webpack to bundle the files and Jest for testing.",
+    description2: "The app is responsive and works on mobile and desktop. - The app uses local storage to save the items. - The app uses webpack to bundle the files. - The app uses Jest for testing.",
+    image: './Assets/Projects/To-do-list1.png',
+    image2: './Assets/Projects/To-do-list2.png',
+    technologies: ['Javascript', 'Jest', 'Webpack'],
+    technologies2: ['HTML', 'Github', 'JavaScript', 'Jest', 'Webpack', 'Terminal'],
+    liveVersion: 'https://dvcorreia1984.github.io/my-to-do-list/',
+    sourceLink: 'https://github.com/dvcorreia1984/my-to-do-list.git',
     liveVersionLogo: 'Assets/Popup/live.svg',
     sourceCodeLogo: 'Assets/Popup/source.svg',
   },
@@ -258,6 +258,12 @@ projects.forEach((project) => {
   const placeHolder = document.createElement('div');
   placeHolder.classList.add('placeholder');
   projectCard.appendChild(placeHolder);
+
+  const image = document.createElement('img');
+  image.id = 'project-image';
+  image.setAttribute('src', project.image);
+  image.setAttribute('alt', 'Project');
+  placeHolder.appendChild(image);
 
   const whiteSpace = document.createElement('div');
   whiteSpace.classList.add('whitespace');

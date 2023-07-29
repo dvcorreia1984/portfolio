@@ -204,7 +204,6 @@ i.fa.fa-bars:hover {
   width: 327px;
   height: 470px;
   border-radius: 10px;
-  justify-content: flex-end;
   margin: 12px;
 }
 
@@ -281,7 +280,7 @@ ul form {
 .placeholder {
   display: flex;
   flex-direction: row;
-  height: 136px;
+  height: 200px;
 }
 
 .whitespace {
@@ -1355,4 +1354,11 @@ div#error-message-submit {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+img#project-image {
+  margin: 5px 0;
+  padding: 10px;
+  size: 11%;
+  width: 303px;
 }
